@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Tu Handyman Local de Confianza",
+    "subtitle": "MANTENIMIENTO Y REPARACIONES EN WICKENBURG, AZ",
+    "description": "Con más de 20 años de experiencia, somos vecinos y amigos de la comunidad. Ofrecemos reparaciones, remodelaciones y mucho más con costos razonables y trabajo de calidad.",
+    "ctaPrimary": "Obtener Cotización Gratis",
+    "ctaSecondary": "Ver Nuestro Trabajo"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Remodelaciones, reparaciones y mantenimiento para su hogar o negocio — y muchos más servicios",
+    "bathroomRemodeling": {
+      "title": "Remodelación de Baños",
+      "description": "Transformamos su baño con acabados de calidad, desde renovaciones completas hasta actualizaciones puntuales."
+    },
+    "flooringTile": {
+      "title": "Pisos y Azulejo",
+      "description": "Reparación e instalación de pisos, trabajo de azulejo (tile) y reparación de flooring en general."
+    },
+    "doorsWindows": {
+      "title": "Puertas y Ventanas",
+      "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad."
+    },
+    "stuccoFences": {
+      "title": "Estuco y Cercos",
+      "description": "Reparación de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año."
+    },
+    "drywall": {
+      "title": "Drywall",
+      "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados."
+    },
+    "painting": {
+      "title": "Pintura Interior y Exterior",
+      "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera."
+    },
+    "cta": "Ver Todos los Servicios"
+  },
+  "whyChooseUs": {
+    "title": "Por Qué Elegirnos",
+    "subtitle": "La diferencia está en los detalles",
+    "experience": {
+      "title": "Más de 20 Años de Experiencia",
+      "description": "Dos décadas resolviendo proyectos de reparación y construcción en el área de Wickenburg."
+    },
+    "quality": {
+      "title": "Costos Razonables",
+      "description": "Ofrecemos precios justos y transparentes sin sacrificar la calidad del trabajo."
+    },
+    "safety": {
+      "title": "Licenciados y Asegurados",
+      "description": "Contratista de Handyman con licencia, protocolos de seguridad rigurosos y operaciones totalmente aseguradas."
+    },
+    "local": {
+      "title": "Vecinos y Amigos de la Comunidad",
+      "description": "Somos parte de esta comunidad. Conocemos el clima, los materiales y las necesidades de cada propiedad en Arizona."
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Vea la calidad de nuestro trabajo",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver Todos los Proyectos"
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Confiados por propietarios y negocios en todo Arizona"
+  },
+  "serviceAreas": {
+    "title": "Áreas de Servicio",
+    "subtitle": "Sirviendo a Wickenburg y comunidades cercanas",
+    "description": "Servimos con orgullo Wickenburg y sus alrededores. Para proyectos más allá de 50 millas, llámenos para acordar los gastos de viaje. Ningún trabajo es demasiado grande o pequeño."
+  },
+  "contactCTA": {
+    "title": "¿Tiene un Proyecto en Mente?",
+    "description": "Contáctenos hoy para una consulta y estimación gratuita. Nosotros nos encargamos del resto.",
+    "button": "Comenzar"
+  },
+  "footer": {
+    "company": "Gato Montes Construction",
+    "tagline": "Construido con Fuerza. Entregado con Orgullo.",
+    "phone": "(928) 555-0147",
+    "email": "info@gatomontesconstruction.com",
+    "address": "123 Main Street, Wickenburg, AZ 85390",
+    "hours": "Lun - Vie: 7:00 AM - 5:00 PM",
+    "rights": "Todos los derechos reservados."
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Su socio de confianza para reparaciones y construcción en Wickenburg",
+    "story": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Con más de 20 años de experiencia, Gato Montes Construction ha sido parte de la comunidad de Wickenburg como vecinos y amigos, no solo como contratistas. Nos especializamos en remodelaciones de baños, reparación de pisos y azulejo, instalación de puertas y ventanas, reparación de estuco y cercos, drywall, pintura y muchos servicios más.",
+      "paragraph2": "Entendemos los desafíos de mantener una propiedad en el desierto de Arizona y ofrecemos soluciones duraderas con costos razonables. Servimos Wickenburg y sus alrededores, y con gusto viajamos más allá de 50 millas bajo acuerdo previo."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "integrity": "Integridad en cada interacción",
+      "quality": "Calidad en cada detalle",
+      "community": "Vecinos y amigos de la comunidad",
+      "innovation": "Soluciones prácticas y efectivas"
+    },
+    "stats": {
+      "projects": "Proyectos Completados",
+      "experience": "20+ Años de Experiencia",
+      "team": "Equipo Profesional",
+      "satisfaction": "Satisfacción del Cliente"
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Hablemos sobre su próximo proyecto",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "service": "Servicio de Interés",
+      "message": "Cuéntenos sobre su proyecto",
+      "submit": "Enviar Mensaje",
+      "success": "¡Gracias! Nos pondremos en contacto pronto."
+    },
+    "info": {
+      "title": "Póngase en Contacto",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "address": "Dirección",
+      "hours": "Horario de Atención"
+    }
+  }
+}
