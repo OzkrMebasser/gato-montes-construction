@@ -24,17 +24,17 @@ const serviceList = [
 
 export function Footer() {
   const { t, i18n } = useTranslation();
-
+const logo = "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783181750/logo-nuevo-gato-montes_x2wcih.png" 
   return (
     <footer className="bg-[#241812] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative w-full h-[200px] rounded-full overflow-hidden ring-2 ring-white/10">
+            <div className="flex items-center ">
+              <div className="relative w-full h-[200px]  overflow-hidden ">
                 <Image
-                  src="https://res.cloudinary.com/dmqqhcf49/image/upload/v1782966893/gatomontesroundlogo_a2jszb.png"
+                  src={logo}
                   alt="Gato Montes Construction"
                   fill
                   className="object-contain bg-[#F7EFE3]"

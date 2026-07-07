@@ -8,33 +8,33 @@
   },
   "hero": {
     "title": "Your Trusted Local Handyman",
-    "subtitle": "HOME REPAIR & MAINTENANCE IN WICKENBURG, AZ",
-    "description": "With over 20 years of experience, we're neighbors and friends in this community. We offer repairs, remodeling, and much more at fair, honest prices.",
+    "subtitle": "MAINTENANCE AND REPAIRS IN WICKENBURG, AZ",
+    "description": "With over 20 years of experience, we're neighbors and friends in this community. We offer repairs, maintenance, and small home updates at fair prices and quality work.",
     "ctaPrimary": "Get a Free Quote",
-    "ctaSecondary": "View Our Work"
+    "ctaSecondary": "See Our Work"
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Remodeling, repairs, and maintenance for your home or business — and many more services",
+    "subtitle": "Repairs, maintenance, and small updates for your home or business — and many more services",
     "bathroomRemodeling": {
-      "title": "Bathroom Remodeling",
-      "description": "We transform your bathroom with quality finishes, from full renovations to targeted upgrades."
+      "title": "Bathroom Updates & Repairs",
+      "description": "We repair and update fixtures, tile, faucets, and finishes in your bathroom with careful attention to detail."
     },
     "flooringTile": {
-      "title": "Flooring & Tile",
-      "description": "Flooring repair and installation, tile work, and general flooring repairs."
+      "title": "Flooring & Tile Repair",
+      "description": "Repair and upkeep of flooring, tile work, and general flooring fixes."
     },
     "doorsWindows": {
       "title": "Doors & Windows",
-      "description": "Installation of doors and windows, adjustments and repairs to improve your property's security and look."
+      "description": "Door and window installation, adjustments, and repairs to improve the safety and look of your property."
     },
     "stuccoFences": {
       "title": "Stucco & Fences",
-      "description": "Stucco repair and fence repair to keep your property protected and looking great year-round."
+      "description": "Stucco and fence repair and upkeep to keep your property protected and looking good year-round."
     },
     "drywall": {
       "title": "Drywall",
-      "description": "Drywall installation and repair, wall patching, and texture finishes."
+      "description": "Drywall installation and repair, wall patching, and textured finishes."
     },
     "painting": {
       "title": "Interior & Exterior Painting",
@@ -46,20 +46,20 @@
     "title": "Why Choose Us",
     "subtitle": "The difference is in the details",
     "experience": {
-      "title": "20+ Years of Experience",
-      "description": "Two decades handling repair and construction projects across the Wickenburg area."
+      "title": "Over 20 Years of Experience",
+      "description": "Two decades handling repair and maintenance projects in the Wickenburg area."
     },
     "quality": {
-      "title": "Fair, Honest Pricing",
+      "title": "Fair Pricing",
       "description": "We offer fair, transparent pricing without cutting corners on quality."
     },
     "safety": {
-      "title": "Licensed & Insured",
-      "description": "Licensed Handyman contractor with rigorous safety protocols and fully insured operations."
+      "title": "Insured & Safety-Focused",
+      "description": "Insured handyman service, with strict safety protocols on every job."
     },
     "local": {
-      "title": "Neighbors & Friends of the Community",
-      "description": "We're part of this community. We understand Arizona's climate, materials, and property needs."
+      "title": "Neighbors and Friends in the Community",
+      "description": "We're part of this community. We know the climate, the materials, and the needs of every property in Arizona."
     }
   },
   "projects": {
@@ -74,7 +74,7 @@
   },
   "serviceAreas": {
     "title": "Service Areas",
-    "subtitle": "Serving Wickenburg and surrounding communities",
+    "subtitle": "Serving Wickenburg and nearby communities",
     "description": "We proudly serve Wickenburg and the surrounding area. For projects beyond 50 miles, give us a call to arrange travel costs. No job is too big or too small."
   },
   "contactCTA": {
@@ -84,7 +84,7 @@
   },
   "footer": {
     "company": "Gato Montes Construction",
-    "tagline": "Built with Strength. Delivered with Pride.",
+    "tagline": "Built With Strength. Delivered With Pride.",
     "phone": "(928) 555-0147",
     "email": "info@gatomontesconstruction.com",
     "address": "123 Main Street, Wickenburg, AZ 85390",
@@ -93,17 +93,17 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Your trusted partner for repairs and construction in Wickenburg",
+    "subtitle": "Your trusted partner for home repairs and maintenance in Wickenburg",
     "story": {
       "title": "Our Story",
-      "paragraph1": "With over 20 years of experience, Gato Montes Construction has been part of the Wickenburg community as neighbors and friends, not just contractors. We specialize in bathroom remodeling, flooring and tile repair, door and window installation, stucco and fence repair, drywall, painting, and many more services.",
-      "paragraph2": "We understand the challenges of maintaining a property in the Arizona desert and offer lasting solutions at fair, honest prices. We serve Wickenburg and the surrounding area, and we're happy to travel beyond 50 miles by prior arrangement."
+      "paragraph1": "With over 20 years of experience, Oscar Salazar and his family have been well known in the Wickenburg community as neighbors and friends. Today, they proudly continue serving the community through Gato Montes Construction, providing reliable handyman and home maintenance services, including bathroom updates and repairs, flooring and tile repair, door and window installation, stucco and fence repair, drywall, painting, and many other home improvement services.",
+      "paragraph2": "We understand the challenges of maintaining a property in the Arizona desert and offer lasting solutions at fair prices. As your local handyman team, we proudly serve Wickenburg and the surrounding area, and are happy to travel beyond 50 miles by prior arrangement."
     },
     "values": {
       "title": "Our Values",
       "integrity": "Integrity in every interaction",
       "quality": "Quality in every detail",
-      "community": "Neighbors and friends of the community",
+      "community": "Neighbors and friends in the community",
       "innovation": "Practical, effective solutions"
     },
     "stats": {
@@ -115,22 +115,93 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Let's discuss your next project",
+    "subtitle": "Let's talk about your next project",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
       "phone": "Phone Number",
-      "service": "Service Interested In",
+      "service": "Service of Interest",
       "message": "Tell us about your project",
       "submit": "Send Message",
       "success": "Thank you! We'll be in touch soon."
     },
     "info": {
-      "title": "Get In Touch",
+      "title": "Get in Touch",
       "phone": "Phone",
       "email": "Email",
       "address": "Address",
       "hours": "Business Hours"
     }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Repairs, maintenance, and small updates for your home or business — and many more services",
+    "bathroomRemodeling": {
+      "title": "Bathroom Updates & Repairs",
+      "description": "We repair and update fixtures, tile, faucets, and finishes in your bathroom with careful attention to detail.",
+      "features": [
+        "Vanity & fixture upgrades",
+        "Shower & tub repair",
+        "Tile & grout repair",
+        "Faucet & fixture repair",
+        "Lighting & ventilation fixes"
+      ]
+    },
+    "flooringTile": {
+      "title": "Flooring & Tile Repair",
+      "description": "Repair and upkeep of flooring, tile work, and general flooring fixes.",
+      "features": [
+        "Flooring repair",
+        "Tile repair & regrouting",
+        "Subfloor patch repair",
+        "Baseboard trim installation & repair",
+        "Grout & caulk touch-ups"
+      ]
+    },
+    "doorsWindows": {
+      "title": "Doors & Windows",
+      "description": "Door and window installation, adjustments, and repairs to improve the safety and look of your property.",
+      "features": [
+        "Door installation & repair",
+        "Window installation & repair",
+        "Hardware & lock fixtures",
+        "Weatherproofing",
+        "Frame & trim repair"
+      ]
+    },
+    "stuccoFences": {
+      "title": "Stucco & Fences",
+      "description": "Stucco and fence repair and upkeep to keep your property protected and looking good year-round.",
+      "features": [
+        "Stucco repair",
+        "Fence repair",
+        "Gate repair & installation",
+        "Crack & patch repair",
+        "Weatherproofing"
+      ]
+    },
+    "drywall": {
+      "title": "Drywall",
+      "description": "Drywall installation and repair, wall patching, and textured finishes.",
+      "features": [
+        "Drywall patch repair",
+        "Patch & crack repair",
+        "Texture matching",
+        "Water damage repair",
+        "Ceiling patch repair"
+      ]
+    },
+    "painting": {
+      "title": "Interior & Exterior Painting",
+      "description": "Professional painting to refresh and protect your home or business, inside and out.",
+      "features": [
+        "Interior painting",
+        "Exterior painting",
+        "Touch-up & color matching",
+        "Fence & deck staining",
+        "Surface prep & repair"
+      ]
+    },
+    "cta": "View All Services"
   }
 }

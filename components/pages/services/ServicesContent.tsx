@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,12 +10,12 @@ if (typeof window !== 'undefined') {
 }
 
 const services = [
-  { key: 'bathroomRemodeling', icon: Bath, features: ['Full bathroom renovations', 'Vanity & fixture upgrades', 'Shower & tub replacement', 'Tile & flooring updates', 'Lighting & ventilation'] },
-  { key: 'flooringTile', icon: LayoutGrid, features: ['Flooring installation', 'Flooring repair', 'Tile work installation', 'Tile repair', 'Subfloor repair'] },
-  { key: 'doorsWindows', icon: DoorOpen, features: ['Door installation & repair', 'Window installation & repair', 'Hardware & lock fixtures', 'Weatherproofing', 'Frame & trim repair'] },
-  { key: 'stuccoFences', icon: Fence, features: ['Stucco repair', 'Fence repair', 'Gate repair & installation', 'Crack & patch repair', 'Weatherproofing'] },
-  { key: 'drywall', icon: LayoutPanelLeft, features: ['Drywall installation', 'Patch & crack repair', 'Texture matching', 'Water damage repair', 'Ceiling repair'] },
-  { key: 'painting', icon: PaintBucket, features: ['Interior painting', 'Exterior painting', 'Touch-up & color matching', 'Fence & deck staining', 'Surface prep & repair'] },
+  { key: 'bathroomRemodeling', icon: Bath },
+  { key: 'flooringTile', icon: LayoutGrid },
+  { key: 'doorsWindows', icon: DoorOpen },
+  { key: 'stuccoFences', icon: Fence },
+  { key: 'drywall', icon: LayoutPanelLeft },
+  { key: 'painting', icon: PaintBucket },
 ];
 
 export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
@@ -38,7 +37,6 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
       );
-
       if (gridRef.current) {
         gsap.fromTo(
           gridRef.current.children,
@@ -62,16 +60,31 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
       {/* Hero */}
       <section
         ref={heroRef}
-        className="relative min-h-[45vh] flex items-center bg-[#241812]"
+        className="relative min-h-[100vh] flex items-center "
       >
         <div className="absolute inset-0">
+          {/* Mobile: rotated 90deg to fill portrait screen */}
+          <div className="md:hidden absolute inset-0 overflow-hidden">
+            <div
+              className="absolute top-1/2 left-1/2 bg-cover bg-center"
+              style={{
+                width: '100vh',
+                height: '100vw',
+                backgroundImage: `url('https://images.pexels.com/photos/6790074/pexels-photo-6790074.jpeg')`,
+                transform: 'translate(-50%, -50%) rotate(90deg)',
+              }}
+            />
+          </div>
+
+          {/* Tablet/Desktop: original, unchanged */}
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-25"
+            className="hidden md:block absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')`,
+              backgroundImage: `url('https://images.pexels.com/photos/6790074/pexels-photo-6790074.jpeg')`,
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/60 to-[#241812]" />
+
+          <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
           <h1 className="services-hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -92,6 +105,10 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
           >
             {services.map((service) => {
               const Icon = service.icon;
+              const features = t(`services.${service.key}.features`, {
+                returnObjects: true,
+              }) as string[];
+
               return (
                 <div
                   key={service.key}
@@ -107,15 +124,16 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
                     {t(`services.${service.key}.description`)}
                   </p>
                   <ul className="space-y-2">
-                    {service.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-center gap-2 text-sm text-slate-700"
-                      >
-                        <Check className="text-[#A0522D] w-3 h-3 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
+                    {Array.isArray(features) &&
+                      features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex items-center gap-2 text-sm text-slate-700"
+                        >
+                          <Check className="text-[#A0522D] w-3 h-3 flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
                   </ul>
                 </div>
               );

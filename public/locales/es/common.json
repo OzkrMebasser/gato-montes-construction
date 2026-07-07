@@ -9,20 +9,20 @@
   "hero": {
     "title": "Tu Handyman Local de Confianza",
     "subtitle": "MANTENIMIENTO Y REPARACIONES EN WICKENBURG, AZ",
-    "description": "Con más de 20 años de experiencia, somos vecinos y amigos de la comunidad. Ofrecemos reparaciones, remodelaciones y mucho más con costos razonables y trabajo de calidad.",
+    "description": "Con más de 20 años de experiencia, somos vecinos y amigos de la comunidad. Ofrecemos reparaciones, mantenimiento y pequeñas actualizaciones para su hogar con costos razonables y trabajo de calidad.",
     "ctaPrimary": "Obtener Cotización Gratis",
     "ctaSecondary": "Ver Nuestro Trabajo"
   },
   "services": {
     "title": "Nuestros Servicios",
-    "subtitle": "Remodelaciones, reparaciones y mantenimiento para su hogar o negocio — y muchos más servicios",
+    "subtitle": "Reparaciones, mantenimiento y pequeñas actualizaciones para su hogar o negocio — y muchos más servicios",
     "bathroomRemodeling": {
-      "title": "Remodelación de Baños",
-      "description": "Transformamos su baño con acabados de calidad, desde renovaciones completas hasta actualizaciones puntuales."
+      "title": "Actualizaciones y Reparaciones de Baño",
+      "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles."
     },
     "flooringTile": {
-      "title": "Pisos y Azulejo",
-      "description": "Reparación e instalación de pisos, trabajo de azulejo (tile) y reparación de flooring en general."
+      "title": "Reparación Pisos y Azulejo",
+      "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general."
     },
     "doorsWindows": {
       "title": "Puertas y Ventanas",
@@ -30,7 +30,7 @@
     },
     "stuccoFences": {
       "title": "Estuco y Cercos",
-      "description": "Reparación de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año."
+      "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año."
     },
     "drywall": {
       "title": "Drywall",
@@ -47,15 +47,15 @@
     "subtitle": "La diferencia está en los detalles",
     "experience": {
       "title": "Más de 20 Años de Experiencia",
-      "description": "Dos décadas resolviendo proyectos de reparación y construcción en el área de Wickenburg."
+      "description": "Dos décadas resolviendo proyectos de reparación y mantenimiento en el área de Wickenburg."
     },
     "quality": {
       "title": "Costos Razonables",
       "description": "Ofrecemos precios justos y transparentes sin sacrificar la calidad del trabajo."
     },
     "safety": {
-      "title": "Licenciados y Asegurados",
-      "description": "Contratista de Handyman con licencia, protocolos de seguridad rigurosos y operaciones totalmente aseguradas."
+      "title": "Asegurados y Comprometidos con la Seguridad",
+      "description": "Servicio de handyman asegurado, con protocolos de seguridad rigurosos en cada proyecto."
     },
     "local": {
       "title": "Vecinos y Amigos de la Comunidad",
@@ -93,11 +93,11 @@
   },
   "about": {
     "title": "Sobre Nosotros",
-    "subtitle": "Su socio de confianza para reparaciones y construcción en Wickenburg",
+    "subtitle": "Su socio de confianza para reparaciones y mantenimiento del hogar en Wickenburg",
     "story": {
       "title": "Nuestra Historia",
-      "paragraph1": "Con más de 20 años de experiencia, Gato Montes Construction ha sido parte de la comunidad de Wickenburg como vecinos y amigos, no solo como contratistas. Nos especializamos en remodelaciones de baños, reparación de pisos y azulejo, instalación de puertas y ventanas, reparación de estuco y cercos, drywall, pintura y muchos servicios más.",
-      "paragraph2": "Entendemos los desafíos de mantener una propiedad en el desierto de Arizona y ofrecemos soluciones duraderas con costos razonables. Servimos Wickenburg y sus alrededores, y con gusto viajamos más allá de 50 millas bajo acuerdo previo."
+      "paragraph1": "Con más de 20 años de experiencia, Oscar Salazar y su familia han sido ampliamente conocidos en la comunidad de Wickenburg como vecinos y amigos. Hoy continúan sirviendo con orgullo a la comunidad a través de Gato Montes Construction, ofreciendo servicios confiables de handyman y mantenimiento del hogar, incluyendo remodelaciones y reparaciones de baños, reparación e instalación de pisos y azulejos, instalación de puertas y ventanas, reparación de estuco y cercas, drywall, pintura y muchos otros servicios de mejora y mantenimiento para el hogar.",
+      "paragraph2": "Entendemos los desafíos de mantener una propiedad en el desierto de Arizona y ofrecemos soluciones duraderas a precios justos. Como su equipo local de handyman, atendemos con orgullo a Wickenburg y las comunidades cercanas, y también podemos desplazarnos a más de 50 millas con previo acuerdo."
     },
     "values": {
       "title": "Nuestros Valores",
@@ -132,5 +132,76 @@
       "address": "Dirección",
       "hours": "Horario de Atención"
     }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Reparaciones, mantenimiento y pequeñas actualizaciones para su hogar o negocio — y muchos más servicios",
+    "bathroomRemodeling": {
+      "title": "Actualizaciones y Reparaciones de Baño",
+      "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles.",
+      "features": [
+        "Actualización de tocador y accesorios",
+        "Reparación de regadera y tina",
+        "Reparación de azulejo y boquilla (grout)",
+        "Reparación de grifería y accesorios",
+        "Arreglos de iluminación y ventilación"
+      ]
+    },
+    "flooringTile": {
+      "title": "Reparación Pisos y Azulejo",
+      "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general.",
+      "features": [
+        "Reparación de pisos",
+        "Reparación de azulejo y boquilla (grout)",
+        "Reparación de parches en subpiso",
+        "Instalación y reparación de zoclo",
+        "Retoques de boquilla y sellador"
+      ]
+    },
+    "doorsWindows": {
+      "title": "Puertas y Ventanas",
+      "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad.",
+      "features": [
+        "Instalación y reparación de puertas",
+        "Instalación y reparación de ventanas",
+        "Herrajes y chapas",
+        "Impermeabilización",
+        "Reparación de marcos y molduras"
+      ]
+    },
+    "stuccoFences": {
+      "title": "Estuco y Cercos",
+      "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año.",
+      "features": [
+        "Reparación de estuco",
+        "Reparación de cercos",
+        "Reparación e instalación de portones",
+        "Reparación de grietas y parches",
+        "Impermeabilización"
+      ]
+    },
+    "drywall": {
+      "title": "Drywall",
+      "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados.",
+      "features": [
+        "Reparación de parches en drywall",
+        "Reparación de grietas y parches",
+        "Igualado de textura",
+        "Reparación por daño de agua",
+        "Reparación de parches en techo"
+      ]
+    },
+    "painting": {
+      "title": "Pintura Interior y Exterior",
+      "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera.",
+      "features": [
+        "Pintura interior",
+        "Pintura exterior",
+        "Retoques y ajuste de color",
+        "Tinte para cercos y decks",
+        "Preparación y reparación de superficies"
+      ]
+    },
+    "cta": "Ver Todos los Servicios"
   }
 }

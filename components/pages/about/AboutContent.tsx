@@ -99,16 +99,20 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
       {/* Hero */}
       <section
         ref={heroRef}
-        className="relative min-h-[50vh] flex items-center bg-[#241812]"
+        className="relative min-h-[100vh] flex items-center "
       >
         <div className="absolute inset-0">
+         
+
+          {/* Tablet/Desktop: original, unchanged */}
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-30"
+            className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')`,
+              backgroundImage: `url('https://images.pexels.com/photos/8961555/pexels-photo-8961555.jpeg')`,
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/60 to-[#241812]" />
+
+          <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
           <h1 className="about-hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -159,7 +163,7 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
+                  src="https://images.pexels.com/photos/8961401/pexels-photo-8961401.jpeg"
                   alt="Construction team"
                   className="w-full h-full object-cover"
                 />

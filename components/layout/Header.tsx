@@ -18,10 +18,12 @@ const navLinks = [
 const logoRound =
   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1782977150/ChatGPT_Image_2_jul_2026_00_14_04_q4llsz.png";
 const logoTextWhite =
-  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1782977996/ChatGPT_Image_2_jul_2026_00_37_15_tjitul.png";
+  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783203088/nuevo-logo-gatomontes-blanco_azztad.png";
 const logoTextBrown =
-  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1782977649/gato-montes-logo-textos_prtjeo.png";
+  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783217903/nuevo-logo-gatomontes_qszinl.png";
 
+const logo =
+  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783181750/logo-nuevo-gato-montes_x2wcih.png";
 const flagMX = "https://flagcdn.com/w80/mx.png";
 const flagUS = "https://flagcdn.com/w80/us.png";
 
@@ -61,20 +63,66 @@ export function Header() {
     return pathname.startsWith(href);
   };
 
+  const langAriaLabel =
+    currentLang === "en" ? "Cambiar a Español" : "Switch to English";
+  const logoHref = currentLang === "es" ? "/inicio" : "/";
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#FBF2E9] backdrop-blur-md shadow-md "
+          ? "bg-[#f9ece2] backdrop-blur-md shadow-md py-1"
           : "bg-transparent py-4"
       }`}
     >
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
+        <div className="relative flex items-center justify-between">
+          {/* MOBILE LEFT SLOT:
+              - not scrolled: language toggle
+              - scrolled: round + brown logo */}
+          <div className="md:hidden flex items-center">
+            {scrolled ? (
+              <Link href={logoHref} className="flex items-center">
+                <Image
+                  src={logoRound}
+                  alt="Gato Montes Construction"
+                  width={70}
+                  height={70}
+                  className="-ml-3 rounded-full h-[60px] w-[60px]"
+                />
+                <Image
+                  src={logoTextBrown}
+                  alt="Gato Montes Construction"
+                  width={200}
+                  height={70}
+                  className="-ml-3 transition-all duration-300 object-contain h-[70px] w-auto"
+                />
+              </Link>
+            ) : (
+              <button
+                onClick={toggleLang}
+                className="flex items-center gap-2 pl-1 pr-3 py-1 transition-all"
+                aria-label={langAriaLabel}
+                title={langAriaLabel}
+              >
+                <Image
+                  src={currentLang === "en" ? flagMX : flagUS}
+                  alt={currentLang === "en" ? "Español" : "English"}
+                  width={24}
+                  height={18}
+                  className="object-cover w-6 h-[18px]"
+                />
+                <span className="text-xs font-bold text-white">
+                  {currentLang === "en" ? "ES" : "EN"}
+                </span>
+              </button>
+            )}
+          </div>
+
+          {/* Logo — tablet/desktop position, unchanged in every scroll state */}
           <Link
-            href={currentLang === "es" ? "/inicio" : "/"}
-            className="flex items-center transition-all duration-300 "
+            href={logoHref}
+            className="hidden md:flex items-center transition-all duration-300"
           >
             {scrolled ? (
               <>
@@ -83,36 +131,42 @@ export function Header() {
                   alt="Gato Montes Construction"
                   width={70}
                   height={70}
-                  className="-ml-3 rounded-full h-[70px] w-[70px] sm:h-[70px] sm:w-[70px] lg:h-[70px] lg:w-[70px]"
+                  className="-ml-3 rounded-full sm:h-[70px] sm:w-[70px] lg:h-[70px] lg:w-[70px]"
                 />
                 <Image
                   src={logoTextBrown}
                   alt="Gato Montes Construction"
                   width={200}
                   height={70}
-                  className="-ml-3 transition-all duration-300 object-contain h-[70px] w-auto sm:h-[70px]  lg:h-[65px]"
+                  className="-ml-10 transition-all duration-300 object-contain sm:h-[70px] lg:h-[70px]"
                 />
               </>
             ) : (
-              <>
-                <Image
-                  src={logoRound}
-                  alt="Gato Montes Construction"
-                  width={70}
-                  height={70}
-                  className="-ml-3 object-contain rounded-full h-[70px] w-[70px] sm:h-[70px] sm:w-[70px] lg:h-[70px] lg:w-[70px]"
-                />
-
-                <Image
-                  src={logoTextWhite}
-                  alt="Gato Montes Construction"
-                  width={200}
-                  height={70}
-                  className="-ml-3 object-contain h-[70px] w-auto sm:h-[70px]  lg:h-[65px]"
-                />
-              </>
+              <Image
+                src={logoTextWhite}
+                alt="Gato Montes Construction"
+                width={250}
+                height={70}
+                className="object-contain sm:h-[70px] lg:h-[120px] w-[250px] md:-ml-3"
+              />
             )}
           </Link>
+
+          {/* Mobile-only centered white logo — ONLY when not scrolled */}
+          {!scrolled && (
+            <Link
+              href={logoHref}
+              className="md:hidden absolute left-1/2 -translate-x-1/2 flex items-center transition-all duration-300"
+            >
+              <Image
+                src={logoTextWhite}
+                alt="Gato Montes Construction"
+                width={250}
+                height={70}
+                className="object-contain h-[120px] w-[260px] mt-12"
+              />
+            </Link>
+          )}
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -158,16 +212,12 @@ export function Header() {
               <span>(928) 555-0147</span>
             </a>
 
-            {/* Language Toggle */}
+            {/* Language Toggle — tablet/desktop position, unchanged */}
             <button
               onClick={toggleLang}
-              className={`flex items-center gap-2 pl-1 pr-3 py-1  transition-all `}
-              aria-label={
-                currentLang === "en" ? "Cambiar a Español" : "Switch to English"
-              }
-              title={
-                currentLang === "en" ? "Cambiar a Español" : "Switch to English"
-              }
+              className="hidden md:flex items-center gap-2 pl-1 pr-3 py-1 transition-all"
+              aria-label={langAriaLabel}
+              title={langAriaLabel}
             >
               <Image
                 src={currentLang === "en" ? flagMX : flagUS}
@@ -185,23 +235,44 @@ export function Header() {
               </span>
             </button>
 
+            {/* Mobile-only language toggle — appears here (right, next to menu button) only when scrolled */}
+            {scrolled && (
+              <button
+                onClick={toggleLang}
+                className="md:hidden flex items-center gap-2 pl-20 py-1 transition-all"
+                aria-label={langAriaLabel}
+                title={langAriaLabel}
+              >
+                <Image
+                  src={currentLang === "en" ? flagMX : flagUS}
+                  alt={currentLang === "en" ? "Español" : "English"}
+                  width={24}
+                  height={18}
+                  className="object-cover w-6 h-[18px]"
+                />
+                <span className="text-xs font-bold text-slate-700">
+                  {currentLang === "en" ? "ES" : "EN"}
+                </span>
+              </button>
+            )}
+
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className={`lg:hidden p-2 rounded-lg transition-colors ${
+              className={`lg:hidden p-2 rounded-lg transition-colors border  ${
                 scrolled
-                  ? "text-slate-700 hover:bg-slate-100"
+                  ? "text-[#241812] hover:bg-[#ffae85] border-[#241812]/30"
                   : "text-white hover:bg-white/10"
               }`}
             >
-              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+              {mobileOpen ? <X size={20} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
       </div>
 
       {/* Scroll Progress Indicator */}
-      <div className="h-[3px] w-full bg-transparent">
+      <div className="h-[3px] w-full bg-transparent absolute -bottom-[3px] left-0">
         <div
           className="h-full bg-[#A0522D] transition-all duration-150 ease-out"
           style={{ width: `${scrollProgress}%` }}
