@@ -62,12 +62,32 @@
       "description": "We're part of this community. We know the climate, the materials, and the needs of every property in Arizona."
     }
   },
-  "projects": {
-    "title": "Featured Projects",
-    "subtitle": "See the quality of our work",
-    "viewProject": "View Project",
-    "viewAll": "View All Projects"
-  },
+"projects": {
+  "title": "Featured Projects",
+  "subtitle": "See the quality of our work",
+  "viewProject": "View Project",
+  "viewAll": "View All Projects",
+  "before": "Before",
+  "after": "After",
+  "items": {
+    "1": {
+      "title": "Bathroom Remodeling",
+      "location": "Wickenburg, AZ",
+      "category": "Bathrooms"
+    },
+    "2": {
+      "title": "Kitchen Remodeling",
+      "location": "Wickenburg, AZ",
+      "category": "Flooring & Tile"
+    },
+    "3": {
+      "title": "Stucco Repair & Painting",
+      "location": "Congress, AZ",
+      "category": "Stucco & Painting"
+    }
+  }
+},
+
   "testimonials": {
     "title": "What Our Clients Say",
     "subtitle": "Trusted by homeowners and businesses across Arizona"

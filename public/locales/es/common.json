@@ -62,12 +62,31 @@
       "description": "Somos parte de esta comunidad. Conocemos el clima, los materiales y las necesidades de cada propiedad en Arizona."
     }
   },
-  "projects": {
-    "title": "Proyectos Destacados",
-    "subtitle": "Vea la calidad de nuestro trabajo",
-    "viewProject": "Ver Proyecto",
-    "viewAll": "Ver Todos los Proyectos"
-  },
+ "projects": {
+  "title": "Proyectos Destacados",
+  "subtitle": "Vea la calidad de nuestro trabajo",
+  "viewProject": "Ver Proyecto",
+  "viewAll": "Ver Todos los Proyectos",
+  "before": "Antes",
+  "after": "Después",
+  "items": {
+    "1": {
+      "title": "Remodelación de Baño",
+      "location": "Wickenburg, AZ",
+      "category": "Baños"
+    },
+    "2": {
+      "title": "Remodelación de Cocina",
+      "location": "Wickenburg, AZ",
+      "category": "Pisos y Tile"
+    },
+    "3": {
+      "title": "Reparación de Estuco y Pintura",
+      "location": "Congress, AZ",
+      "category": "Estuco y Pintura"
+    }
+  }
+},
   "testimonials": {
     "title": "Lo Que Dicen Nuestros Clientes",
     "subtitle": "Confiados por propietarios y negocios en todo Arizona"

@@ -1,25 +1,36 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useTranslation } from '@/lib/i18n/client';
-import { CheckCircle, Users, Calendar, FolderKanban, Smile, Award, Shield, HardHat, MapPin } from 'lucide-react';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "@/lib/i18n/client";
+import {
+  CheckCircle,
+  Users,
+  Calendar,
+  FolderKanban,
+  Smile,
+  Award,
+  Shield,
+  HardHat,
+  MapPin,
+} from "lucide-react";
+import { rye } from "@/lib/fonts";
 
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 const stats = [
-  { key: 'projects', icon: FolderKanban, value: '500+' },
-  { key: 'experience', icon: Calendar, value: '25+' },
-  { key: 'team', icon: Users, value: '35+' },
-  { key: 'satisfaction', icon: Smile, value: '98%' },
+  { key: "projects", icon: FolderKanban, value: "500+" },
+  { key: "experience", icon: Calendar, value: "25+" },
+  { key: "team", icon: Users, value: "35+" },
+  { key: "satisfaction", icon: Smile, value: "98%" },
 ];
 
-const values = ['integrity', 'quality', 'community', 'innovation'];
+const values = ["integrity", "quality", "community", "innovation"];
 
-export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
+export function AboutContent({ lang }: { lang: "en" | "es" }) {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -36,14 +47,14 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        '.about-hero-title',
+        ".about-hero-title",
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
       );
       gsap.fromTo(
-        '.about-hero-subtitle',
+        ".about-hero-subtitle",
         { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', delay: 0.3 }
+        { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", delay: 0.3 },
       );
 
       if (statsRef.current) {
@@ -55,9 +66,9 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
             y: 0,
             duration: 0.7,
             stagger: 0.12,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: statsRef.current, start: 'top 80%' },
-          }
+            ease: "power3.out",
+            scrollTrigger: { trigger: statsRef.current, start: "top 80%" },
+          },
         );
       }
 
@@ -70,9 +81,9 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
             y: 0,
             duration: 0.7,
             stagger: 0.15,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: contentRef.current, start: 'top 80%' },
-          }
+            ease: "power3.out",
+            scrollTrigger: { trigger: contentRef.current, start: "top 80%" },
+          },
         );
       }
 
@@ -85,9 +96,9 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
             y: 0,
             duration: 0.6,
             stagger: 0.1,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: valuesRef.current, start: 'top 80%' },
-          }
+            ease: "power3.out",
+            scrollTrigger: { trigger: valuesRef.current, start: "top 80%" },
+          },
         );
       }
     });
@@ -102,8 +113,6 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
         className="relative min-h-[100vh] flex items-center "
       >
         <div className="absolute inset-0">
-         
-
           {/* Tablet/Desktop: original, unchanged */}
           <div
             className="absolute inset-0 bg-cover bg-center"
@@ -115,11 +124,14 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
           <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-          <h1 className="about-hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            {t('about.title')}
+          <h1
+            className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-white leading-tight mb-6`}
+          >
+            {" "}
+            {t("about.title")}
           </h1>
           <p className="about-hero-subtitle text-lg text-white/70 max-w-2xl">
-            {t('about.subtitle')}
+            {t("about.subtitle")}
           </p>
         </div>
       </section>
@@ -134,7 +146,9 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
                 <div key={stat.key} className="text-center text-white">
                   <Icon className="mx-auto mb-3 w-8 h-8 opacity-80" />
                   <p className="text-3xl md:text-4xl font-bold">{stat.value}</p>
-                  <p className="text-sm text-white/80 mt-1">{t(`about.stats.${stat.key}`)}</p>
+                  <p className="text-sm text-white/80 mt-1">
+                    {t(`about.stats.${stat.key}`)}
+                  </p>
                 </div>
               );
             })}
@@ -151,13 +165,13 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
                 Our Story
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#241812] mt-3 mb-8">
-                {t('about.story.title')}
+                {t("about.story.title")}
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
-                {t('about.story.paragraph1')}
+                {t("about.story.paragraph1")}
               </p>
               <p className="text-slate-600 leading-relaxed">
-                {t('about.story.paragraph2')}
+                {t("about.story.paragraph2")}
               </p>
             </div>
             <div className="relative">
@@ -182,10 +196,13 @@ export function AboutContent({ lang }: { lang: 'en' | 'es' }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#241812]">
-              {t('about.values.title')}
+              {t("about.values.title")}
             </h2>
           </div>
-          <div ref={valuesRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            ref={valuesRef}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
             {values.map((value) => (
               <div
                 key={value}

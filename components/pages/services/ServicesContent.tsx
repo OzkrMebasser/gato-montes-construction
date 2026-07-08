@@ -1,24 +1,34 @@
-'use client';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useTranslation } from '@/lib/i18n/client';
-import { Bath, LayoutGrid, DoorOpen, Fence, LayoutPanelLeft, PaintBucket, Check } from 'lucide-react';
+"use client";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "@/lib/i18n/client";
+import {
+  Bath,
+  LayoutGrid,
+  DoorOpen,
+  Fence,
+  LayoutPanelLeft,
+  PaintBucket,
+  Check,
+} from "lucide-react";
+import { rye } from "@/lib/fonts";
 
-if (typeof window !== 'undefined') {
+
+if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 const services = [
-  { key: 'bathroomRemodeling', icon: Bath },
-  { key: 'flooringTile', icon: LayoutGrid },
-  { key: 'doorsWindows', icon: DoorOpen },
-  { key: 'stuccoFences', icon: Fence },
-  { key: 'drywall', icon: LayoutPanelLeft },
-  { key: 'painting', icon: PaintBucket },
+  { key: "bathroomRemodeling", icon: Bath },
+  { key: "flooringTile", icon: LayoutGrid },
+  { key: "doorsWindows", icon: DoorOpen },
+  { key: "stuccoFences", icon: Fence },
+  { key: "drywall", icon: LayoutPanelLeft },
+  { key: "painting", icon: PaintBucket },
 ];
 
-export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
+export function ServicesContent({ lang }: { lang: "en" | "es" }) {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -33,9 +43,9 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        '.services-hero-title',
+        ".services-hero-title",
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
       );
       if (gridRef.current) {
         gsap.fromTo(
@@ -46,9 +56,9 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
             y: 0,
             duration: 0.7,
             stagger: 0.12,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: gridRef.current, start: 'top 80%' },
-          }
+            ease: "power3.out",
+            scrollTrigger: { trigger: gridRef.current, start: "top 80%" },
+          },
         );
       }
     });
@@ -68,10 +78,10 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
             <div
               className="absolute top-1/2 left-1/2 bg-cover bg-center"
               style={{
-                width: '100vh',
-                height: '100vw',
+                width: "100vh",
+                height: "100vw",
                 backgroundImage: `url('https://images.pexels.com/photos/6790074/pexels-photo-6790074.jpeg')`,
-                transform: 'translate(-50%, -50%) rotate(90deg)',
+                transform: "translate(-50%, -50%) rotate(90deg)",
               }}
             />
           </div>
@@ -87,11 +97,14 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
           <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-          <h1 className="services-hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            {t('services.title')}
+          <h1
+            className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-white leading-tight mb-6`}
+          >
+            {" "}
+            {t("services.title")}
           </h1>
           <p className="text-lg text-white/70 max-w-2xl">
-            {t('services.subtitle')}
+            {t("services.subtitle")}
           </p>
         </div>
       </section>
@@ -112,7 +125,8 @@ export function ServicesContent({ lang }: { lang: 'en' | 'es' }) {
               return (
                 <div
                   key={service.key}
-                  className="group bg-[#F7EFE3] hover:bg-white rounded-2xl p-8 border border-[#EAD9C0] hover:border-[#A0522D]/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  id={service.key}
+                  className="group bg-[#F7EFE3] hover:bg-white rounded-2xl p-8 border border-[#EAD9C0] hover:border-[#A0522D]/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 scroll-mt-28"
                 >
                   <div className="w-14 h-14 rounded-xl bg-[#EAD9C0] text-[#A0522D] flex items-center justify-center mb-6 group-hover:bg-[#A0522D] group-hover:text-white transition-all duration-300">
                     <Icon className="w-6 h-6" />

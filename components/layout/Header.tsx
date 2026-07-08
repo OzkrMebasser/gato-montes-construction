@@ -11,7 +11,7 @@ const navLinks = [
   { key: "home", href: { en: "/", es: "/inicio" } },
   { key: "about", href: { en: "/about", es: "/nosotros" } },
   { key: "services", href: { en: "/services", es: "/servicios" } },
-  { key: "projects", href: { en: "/projects", es: "/proyectos" } },
+  // { key: "projects", href: { en: "/projects", es: "/proyectos" } },
   { key: "contact", href: { en: "/contact", es: "/contacto" } },
 ];
 

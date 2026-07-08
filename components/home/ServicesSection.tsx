@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useTranslation } from '@/lib/i18n/client';
-import { useStaggerFadeIn } from '@/hooks/useGsapAnimation';
+import Link from "next/link";
+import { useTranslation } from "@/lib/i18n/client";
+import { useStaggerFadeIn } from "@/hooks/useGsapAnimation";
+import { useEffect } from "react";
 import {
   Bath,
   LayoutGrid,
@@ -11,33 +12,48 @@ import {
   LayoutPanelLeft,
   PaintBucket,
   ArrowRight,
-} from 'lucide-react';
+} from "lucide-react";
 import { rye } from "@/lib/fonts";
 
-
 const services = [
-  { key: 'bathroomRemodeling', icon: Bath },
-  { key: 'flooringTile', icon: LayoutGrid },
-  { key: 'doorsWindows', icon: DoorOpen },
-  { key: 'stuccoFences', icon: Fence },
-  { key: 'drywall', icon: LayoutPanelLeft },
-  { key: 'painting', icon: PaintBucket },
+  { key: "bathroomRemodeling", icon: Bath },
+  { key: "flooringTile", icon: LayoutGrid },
+  { key: "doorsWindows", icon: DoorOpen },
+  { key: "stuccoFences", icon: Fence },
+  { key: "drywall", icon: LayoutPanelLeft },
+  { key: "painting", icon: PaintBucket },
 ];
 
 export function ServicesSection() {
   const { t, i18n } = useTranslation();
   const gridRef = useStaggerFadeIn(0.12);
+  const currentLang = (i18n.language || "en").split("-")[0] as "en" | "es";
+  const servicesHref = currentLang === "es" ? "/es/servicios" : "/services";
+
+  useEffect(() => {
+  if (window.location.hash) {
+    const id = window.location.hash.substring(1);
+    const el = document.getElementById(id);
+    if (el) {
+      // pequeño delay para asegurar que el layout ya renderizó
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  }
+}, []);
 
   return (
     <section className="py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-[#A0522D] font-semibold text-sm uppercase tracking-[0.2em]">
-            {t('services.subtitle')}
+            {t("services.subtitle")}
           </span>
-                    <h2 className={` uppercase ${rye.className}  text-3xl md:text-4xl lg:text-5xl font-bold text-[#241812] mt-3`}>
-
-            {t('services.title')}
+          <h2
+            className={` uppercase ${rye.className}  text-3xl md:text-4xl lg:text-5xl font-bold text-[#241812] mt-3`}
+          >
+            {t("services.title")}
           </h2>
         </div>
 
@@ -61,9 +77,11 @@ export function ServicesSection() {
                 <p className="text-slate-600 leading-relaxed text-sm mb-4">
                   {t(`services.${service.key}.description`)}
                 </p>
-                <span className="inline-flex items-center gap-1 text-[#A0522D] font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Learn more <ArrowRight className="w-3 h-3" />
-                </span>
+                <Link   href={`${servicesHref}#${service.key}`} className="text-[#A0522D] hover:text-[#8B4429] font-semibold transition-colors">
+                  <span className="inline-flex items-center gap-1 text-[#A0522D] font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Learn more <ArrowRight className="w-3 h-3" />
+                  </span>
+                </Link>
               </div>
             );
           })}
@@ -74,7 +92,7 @@ export function ServicesSection() {
             href="/services"
             className="inline-flex items-center gap-2 text-[#A0522D] hover:text-[#8B4429] font-semibold transition-colors"
           >
-            {t('services.cta')}
+            {t("services.cta")}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
