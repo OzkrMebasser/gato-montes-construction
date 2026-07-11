@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { rye } from "@/lib/fonts";
 
-
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -65,6 +64,36 @@ export function ServicesContent({ lang }: { lang: "en" | "es" }) {
     return () => ctx.revert();
   }, []);
 
+  // Scroll al id del hash (#drywall, #painting, etc.) una vez que
+  // el idioma ya cambió y el layout terminó de asentarse.
+  useEffect(() => {
+    if (!window.location.hash) return;
+
+    const id = window.location.hash.substring(1);
+
+    const scrollToId = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        return true;
+      }
+      return false;
+    };
+
+    // Reintenta unas cuantas veces por si el cambio de idioma
+    // todavía está re-renderizando el grid cuando este efecto corre.
+    let attempts = 0;
+    const maxAttempts = 10;
+    const interval = setInterval(() => {
+      attempts += 1;
+      if (scrollToId() || attempts >= maxAttempts) {
+        clearInterval(interval);
+      }
+    }, 150);
+
+    return () => clearInterval(interval);
+  }, [lang, i18n.language]);
+
   return (
     <>
       {/* Hero */}
@@ -96,7 +125,7 @@ export function ServicesContent({ lang }: { lang: "en" | "es" }) {
 
           <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
+        <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-16 py-32 pt-40 ">
           <h1
             className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-white leading-tight mb-6`}
           >

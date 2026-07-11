@@ -8,40 +8,84 @@
   },
   "hero": {
     "title": "Tu Handyman Local de Confianza",
-    "subtitle": "MANTENIMIENTO Y REPARACIONES EN WICKENBURG, AZ",
-    "description": "Con más de 20 años de experiencia, somos vecinos y amigos de la comunidad. Ofrecemos reparaciones, mantenimiento y pequeñas actualizaciones para su hogar con costos razonables y trabajo de calidad.",
+    "subtitle": "REPARACIONES Y MANTENIMIENTO PARA EL HOGAR EN WICKENBURG, AZ",
+    "description": "Más de 20 años de reparaciones y mantenimiento de calidad para el hogar. Servicio confiable a precios justos.",
     "ctaPrimary": "Obtener Cotización Gratis",
     "ctaSecondary": "Ver Nuestro Trabajo"
   },
   "services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Reparaciones, mantenimiento y pequeñas actualizaciones para su hogar o negocio — y muchos más servicios",
-    "bathroomRemodeling": {
-      "title": "Actualizaciones y Reparaciones de Baño",
-      "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles."
-    },
-    "flooringTile": {
-      "title": "Reparación Pisos y Azulejo",
-      "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general."
-    },
-    "doorsWindows": {
-      "title": "Puertas y Ventanas",
-      "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad."
-    },
-    "stuccoFences": {
-      "title": "Estuco y Cercos",
-      "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año."
-    },
-    "drywall": {
-      "title": "Drywall",
-      "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados."
-    },
-    "painting": {
-      "title": "Pintura Interior y Exterior",
-      "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera."
-    },
-    "cta": "Ver Todos los Servicios"
+  "title": "Nuestros Servicios",
+  "subtitle": "Reparaciones, mantenimiento y mejoras de calidad para el hogar.",
+  "cta": "Ver Todos los Servicios",
+  "more": "Saber más",
+  "bathroomRemodeling": {
+    "title": "Actualizaciones y Reparaciones de Baño",
+    "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles.",
+    "features": [
+      "Actualización de tocador y accesorios",
+      "Reparación de regadera y tina",
+      "Reparación de azulejo y boquilla (grout)",
+      "Reparación de grifería y accesorios",
+      "Arreglos de iluminación y ventilación"
+    ]
   },
+  "flooringTile": {
+    "title": "Reparación Pisos y Azulejo",
+    "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general.",
+    "features": [
+      "Reparación de pisos",
+      "Reparación de azulejo y boquilla (grout)",
+      "Reparación de parches en subpiso",
+      "Instalación y reparación de zoclo",
+      "Retoques de boquilla y sellador"
+    ]
+  },
+  "doorsWindows": {
+    "title": "Puertas y Ventanas",
+    "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad.",
+    "features": [
+      "Instalación y reparación de puertas",
+      "Instalación y reparación de ventanas",
+      "Herrajes y chapas",
+      "Impermeabilización",
+      "Reparación de marcos y molduras"
+    ]
+  },
+  "stuccoFences": {
+    "title": "Estuco y Cercos",
+    "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año.",
+    "features": [
+      "Reparación de estuco",
+      "Reparación de cercos",
+      "Reparación e instalación de portones",
+      "Reparación de grietas y parches",
+      "Impermeabilización"
+    ]
+  },
+  "drywall": {
+    "title": "Drywall",
+    "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados.",
+    "features": [
+      "Reparación de parches en drywall",
+      "Reparación de grietas y parches",
+      "Igualado de textura",
+      "Reparación por daño de agua",
+      "Reparación de parches en techo"
+    ]
+  },
+  "painting": {
+    "title": "Pintura Interior y Exterior",
+    "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera.",
+    "features": [
+      "Pintura interior",
+      "Pintura exterior",
+      "Retoques y ajuste de color",
+      "Tinte para cercos y decks",
+      "Preparación y reparación de superficies"
+    ]
+  }
+  
+},
   "whyChooseUs": {
     "title": "Por Qué Elegirnos",
     "subtitle": "La diferencia está en los detalles",
@@ -62,34 +106,48 @@
       "description": "Somos parte de esta comunidad. Conocemos el clima, los materiales y las necesidades de cada propiedad en Arizona."
     }
   },
- "projects": {
-  "title": "Proyectos Destacados",
-  "subtitle": "Vea la calidad de nuestro trabajo",
-  "viewProject": "Ver Proyecto",
-  "viewAll": "Ver Todos los Proyectos",
-  "before": "Antes",
-  "after": "Después",
-  "items": {
-    "1": {
-      "title": "Remodelación de Baño",
-      "location": "Wickenburg, AZ",
-      "category": "Baños"
-    },
-    "2": {
-      "title": "Remodelación de Cocina",
-      "location": "Wickenburg, AZ",
-      "category": "Pisos y Tile"
-    },
-    "3": {
-      "title": "Reparación de Estuco y Pintura",
-      "location": "Congress, AZ",
-      "category": "Estuco y Pintura"
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Vea la calidad de nuestro trabajo",
+    "viewProject": "Ver Proyecto",
+    "viewAll": "Ver Todos los Proyectos",
+    "before": "Antes",
+    "after": "Después",
+    "items": {
+      "1": {
+        "title": "Remodelación de Baño",
+        "location": "Wickenburg, AZ",
+        "category": "Baños"
+      },
+      "2": {
+        "title": "Remodelación de Cocina",
+        "location": "Wickenburg, AZ",
+        "category": "Pisos y Tile"
+      },
+      "3": {
+        "title": "Reparación de Estuco y Pintura",
+        "location": "Congress, AZ",
+        "category": "Estuco y Pintura"
+      }
     }
-  }
-},
+  },
   "testimonials": {
     "title": "Lo Que Dicen Nuestros Clientes",
-    "subtitle": "Confiados por propietarios y negocios en todo Arizona"
+    "subtitle": "La confianza de propietarios y negocios en todo Arizona",
+    "items": {
+      "1": {
+        "role": "Propietaria, Wickenburg",
+        "text": "Oscar Salazar remodeló nuestro baño y la atención al detalle fue increíble. Trató nuestra casa como si fuera la suya. Precios justos y trabajo honesto."
+      },
+      "2": {
+        "role": "Propietario, Congress",
+        "text": "Necesitábamos reparar tablaroca e instalar piso nuevo de tile después de un daño por agua. Oscar llegó a tiempo y el trabajo quedó mejor que antes. Muy recomendado."
+      },
+      "3": {
+        "role": "Propietarios, Wickenburg",
+        "text": "Oscar nos arregló el estuco, reparó la cerca y repintó toda la fachada. Es un vecino de verdad que se preocupa por hacer bien el trabajo a un precio razonable."
+      }
+    }
   },
   "serviceAreas": {
     "title": "Áreas de Servicio",
@@ -97,26 +155,32 @@
     "description": "Servimos con orgullo Wickenburg y sus alrededores. Para proyectos más allá de 50 millas, llámenos para acordar los gastos de viaje. Ningún trabajo es demasiado grande o pequeño."
   },
   "contactCTA": {
-    "title": "¿Tiene un Proyecto en Mente?",
-    "description": "Contáctenos hoy para una consulta y estimación gratuita. Nosotros nos encargamos del resto.",
-    "button": "Comenzar"
+    "title": "¿Necesitas un Handyman de Confianza?",
+    "description": "Desde reparaciones y mantenimiento del hogar hasta remodelaciones de baños e instalación de pisos, estamos aquí para ayudarte.",
+    "button": "Solicita un Presupuesto Gratis"
   },
   "footer": {
-    "company": "Gato Montes Construction",
-    "tagline": "Construido con Fuerza. Entregado con Orgullo.",
-    "phone": "(928) 555-0147",
-    "email": "info@gatomontesconstruction.com",
-    "address": "123 Main Street, Wickenburg, AZ 85390",
-    "hours": "Lun - Vie: 7:00 AM - 5:00 PM",
-    "rights": "Todos los derechos reservados."
-  },
+  "company": "Gato Montes Construction",
+  "tagline": "Construido con Fuerza. Entregado con Orgullo.",
+  "phone": "(928) 555-0147",
+  "email": "info@gatomontesconstruction.com",
+  "address": "152 Henderson StWickenburg, AZ 85390, USA",
+ "hours": "Lun - Vie: 8:00 AM - 5:00 PM\nSáb: 8:00 AM - 12:00 PM\nDom: Cerrado",
+  "rights": "Todos los derechos reservados.",
+  "quickLinks": "Enlaces Rápidos",
+  "followUs": "Síguenos",
+  "privacyPolicy": "Política de Privacidad",
+  "termsOfService": "Términos de Servicio",
+  "designed": "Diseñado y desarrollado por "
+},
   "about": {
     "title": "Sobre Nosotros",
     "subtitle": "Su socio de confianza para reparaciones y mantenimiento del hogar en Wickenburg",
     "story": {
       "title": "Nuestra Historia",
       "paragraph1": "Con más de 20 años de experiencia, Oscar Salazar y su familia han sido ampliamente conocidos en la comunidad de Wickenburg como vecinos y amigos. Hoy continúan sirviendo con orgullo a la comunidad a través de Gato Montes Construction, ofreciendo servicios confiables de handyman y mantenimiento del hogar, incluyendo remodelaciones y reparaciones de baños, reparación e instalación de pisos y azulejos, instalación de puertas y ventanas, reparación de estuco y cercas, drywall, pintura y muchos otros servicios de mejora y mantenimiento para el hogar.",
-      "paragraph2": "Entendemos los desafíos de mantener una propiedad en el desierto de Arizona y ofrecemos soluciones duraderas a precios justos. Como su equipo local de handyman, atendemos con orgullo a Wickenburg y las comunidades cercanas, y también podemos desplazarnos a más de 50 millas con previo acuerdo."
+      "paragraph2": "Entendemos los desafíos de mantener una propiedad en el desierto de Arizona y ofrecemos soluciones duraderas a precios justos. Como su equipo local de handyman, atendemos con orgullo a Wickenburg y las comunidades cercanas, y también podemos desplazarnos a más de 50 millas con previo acuerdo.",
+      "yearsOfExcellence": "Años de excelencia"
     },
     "values": {
       "title": "Nuestros Valores",
@@ -127,8 +191,8 @@
     },
     "stats": {
       "projects": "Proyectos Completados",
-      "experience": "20+ Años de Experiencia",
-      "team": "Equipo Profesional",
+      "experience": "Años de Experiencia",
+      "quality": "Compromiso con la Calidad",
       "satisfaction": "Satisfacción del Cliente"
     }
   },
@@ -151,76 +215,6 @@
       "address": "Dirección",
       "hours": "Horario de Atención"
     }
-  },
-  "services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Reparaciones, mantenimiento y pequeñas actualizaciones para su hogar o negocio — y muchos más servicios",
-    "bathroomRemodeling": {
-      "title": "Actualizaciones y Reparaciones de Baño",
-      "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles.",
-      "features": [
-        "Actualización de tocador y accesorios",
-        "Reparación de regadera y tina",
-        "Reparación de azulejo y boquilla (grout)",
-        "Reparación de grifería y accesorios",
-        "Arreglos de iluminación y ventilación"
-      ]
-    },
-    "flooringTile": {
-      "title": "Reparación Pisos y Azulejo",
-      "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general.",
-      "features": [
-        "Reparación de pisos",
-        "Reparación de azulejo y boquilla (grout)",
-        "Reparación de parches en subpiso",
-        "Instalación y reparación de zoclo",
-        "Retoques de boquilla y sellador"
-      ]
-    },
-    "doorsWindows": {
-      "title": "Puertas y Ventanas",
-      "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad.",
-      "features": [
-        "Instalación y reparación de puertas",
-        "Instalación y reparación de ventanas",
-        "Herrajes y chapas",
-        "Impermeabilización",
-        "Reparación de marcos y molduras"
-      ]
-    },
-    "stuccoFences": {
-      "title": "Estuco y Cercos",
-      "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año.",
-      "features": [
-        "Reparación de estuco",
-        "Reparación de cercos",
-        "Reparación e instalación de portones",
-        "Reparación de grietas y parches",
-        "Impermeabilización"
-      ]
-    },
-    "drywall": {
-      "title": "Drywall",
-      "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados.",
-      "features": [
-        "Reparación de parches en drywall",
-        "Reparación de grietas y parches",
-        "Igualado de textura",
-        "Reparación por daño de agua",
-        "Reparación de parches en techo"
-      ]
-    },
-    "painting": {
-      "title": "Pintura Interior y Exterior",
-      "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera.",
-      "features": [
-        "Pintura interior",
-        "Pintura exterior",
-        "Retoques y ajuste de color",
-        "Tinte para cercos y decks",
-        "Preparación y reparación de superficies"
-      ]
-    },
-    "cta": "Ver Todos los Servicios"
   }
+
 }

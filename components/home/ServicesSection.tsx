@@ -28,7 +28,7 @@ export function ServicesSection() {
   const { t, i18n } = useTranslation();
   const gridRef = useStaggerFadeIn(0.12);
   const currentLang = (i18n.language || "en").split("-")[0] as "en" | "es";
-  const servicesHref = currentLang === "es" ? "/es/servicios" : "/services";
+  const servicesHref = currentLang === "es" ? "/servicios" : "/services";
 
   useEffect(() => {
   if (window.location.hash) {
@@ -79,7 +79,7 @@ export function ServicesSection() {
                 </p>
                 <Link   href={`${servicesHref}#${service.key}`} className="text-[#A0522D] hover:text-[#8B4429] font-semibold transition-colors">
                   <span className="inline-flex items-center gap-1 text-[#A0522D] font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Learn more <ArrowRight className="w-3 h-3" />
+                     {t("services.more")} <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
               </div>
@@ -89,7 +89,7 @@ export function ServicesSection() {
 
         <div className="text-center mt-12">
           <Link
-            href="/services"
+            href={servicesHref}
             className="inline-flex items-center gap-2 text-[#A0522D] hover:text-[#8B4429] font-semibold transition-colors"
           >
             {t("services.cta")}

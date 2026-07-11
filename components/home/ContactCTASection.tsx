@@ -11,9 +11,9 @@ export function ContactCTASection() {
   const contentRef = useFadeIn();
 
   return (
-    <section className="py-20 md:py-28 bg-[#A0522D]">
+    <section className="py-20 md:py-28 bg-[#A0522D] text-justify">
       <div
-        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
         ref={contentRef}
       >
         <h2
@@ -21,7 +21,7 @@ export function ContactCTASection() {
         >
           {t("contactCTA.title")}
         </h2>
-        <p className="text-lg text-white/90 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg text-[#fac793] mb-10 max-w-8xl mx-auto mt-5">
           {t("contactCTA.description")}
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">

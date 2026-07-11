@@ -1,17 +1,33 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useTranslation } from "@/lib/i18n/client";
 import { useFadeIn } from "@/hooks/useGsapAnimation";
 import { MapPin } from "lucide-react";
 import { rye } from "@/lib/fonts";
 
+// El mapa usa APIs de browser (window/document), así que se carga solo en cliente
+const ServiceAreaMap = dynamic(() => import("./ServiceAreaMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center bg-[#EAD9C0]/40 text-[#A0522D] text-sm font-medium">
+      Loading map...
+    </div>
+  ),
+});
+
 const areas = [
   "Wickenburg",
   "Congress",
-  "Aguila",
   "Morristown",
+  "Forepaugh",
   "Yarnell",
   "Wittmann",
+  "Aguila",
+  "Surprise",
+  "Peoria",
+  "Sun City West",
+  "Anthem",
 ];
 
 export function ServiceAreasSection() {
@@ -52,11 +68,7 @@ export function ServiceAreasSection() {
             </div>
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&q=80"
-                  alt="Wickenburg Arizona"
-                  className="w-full h-full object-cover"
-                />
+                <ServiceAreaMap />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-[#A0522D] text-white rounded-2xl p-6 shadow-xl hidden md:block">
                 <p className="text-3xl font-bold">20+</p>

@@ -14,6 +14,7 @@ import {
   Shield,
   HardHat,
   MapPin,
+ 
 } from "lucide-react";
 import { rye } from "@/lib/fonts";
 
@@ -23,12 +24,19 @@ if (typeof window !== "undefined") {
 
 const stats = [
   { key: "projects", icon: FolderKanban, value: "500+" },
-  { key: "experience", icon: Calendar, value: "25+" },
-  { key: "team", icon: Users, value: "35+" },
+  { key: "experience", icon: Calendar, value: "20+" },
+  { key: "quality", icon: CheckCircle, value: "100%" },
   { key: "satisfaction", icon: Smile, value: "98%" },
 ];
 
 const values = ["integrity", "quality", "community", "innovation"];
+
+// Separa el número del sufijo, ej: "500+" -> { num: 500, suffix: "+" }
+function parseStatValue(value: string) {
+  const match = value.match(/^(\d+)(.*)$/);
+  if (!match) return { num: 0, suffix: value };
+  return { num: parseInt(match[1], 10), suffix: match[2] };
+}
 
 export function AboutContent({ lang }: { lang: "en" | "es" }) {
   const { t, i18n } = useTranslation();
@@ -43,6 +51,7 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
   const contentRef = useRef<HTMLDivElement>(null);
   const statsRef = useRef<HTMLDivElement>(null);
   const valuesRef = useRef<HTMLDivElement>(null);
+  const counterRefs = useRef<(HTMLParagraphElement | null)[]>([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -70,6 +79,24 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
             scrollTrigger: { trigger: statsRef.current, start: "top 80%" },
           },
         );
+
+        // Conteo de 0 al valor final, misma duración y mismo trigger
+        // para que todos empiecen y terminen juntos.
+        stats.forEach((stat, i) => {
+          const el = counterRefs.current[i];
+          if (!el) return;
+          const { num, suffix } = parseStatValue(stat.value);
+          const counter = { val: 0 };
+          gsap.to(counter, {
+            val: num,
+            duration: 1.8,
+            ease: "power2.out",
+            scrollTrigger: { trigger: statsRef.current, start: "top 80%" },
+            onUpdate: () => {
+              el.textContent = `${Math.floor(counter.val)}${suffix}`;
+            },
+          });
+        });
       }
 
       if (contentRef.current) {
@@ -123,7 +150,7 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
 
           <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
+        <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-16 py-32 pt-40 ">
           <h1
             className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-white leading-tight mb-6`}
           >
@@ -140,12 +167,20 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
       <section className="py-16 bg-[#A0522D]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div ref={statsRef} className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat) => {
+            {stats.map((stat, i) => {
               const Icon = stat.icon;
+              const { suffix } = parseStatValue(stat.value);
               return (
                 <div key={stat.key} className="text-center text-white">
                   <Icon className="mx-auto mb-3 w-8 h-8 opacity-80" />
-                  <p className="text-3xl md:text-4xl font-bold">{stat.value}</p>
+                  <p
+                    ref={(el) => {
+                      counterRefs.current[i] = el;
+                    }}
+                    className="text-3xl md:text-4xl font-bold"
+                  >
+                    {`0${suffix}`}
+                  </p>
                   <p className="text-sm text-white/80 mt-1">
                     {t(`about.stats.${stat.key}`)}
                   </p>
@@ -183,8 +218,8 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-[#241812] text-white rounded-2xl p-6 shadow-xl hidden md:block">
-                <p className="text-3xl font-bold text-[#D9A876]">25+</p>
-                <p className="text-sm text-white/70">Years of Excellence</p>
+                <p className="text-3xl font-bold text-[#D9A876]">20+</p>
+                <p className="text-sm text-white/70">{t("about.story.yearsOfExcellence")}</p>
               </div>
             </div>
           </div>

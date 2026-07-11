@@ -22,8 +22,12 @@ const logoTextWhite =
 const logoTextBrown =
   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783217903/nuevo-logo-gatomontes_qszinl.png";
 
+// const logo =
+//   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783181750/logo-nuevo-gato-montes_x2wcih.png";
+
 const logo =
-  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783181750/logo-nuevo-gato-montes_x2wcih.png";
+  "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783641933/logo-nuevo-gato-montes_txw8bu.png";
+
 const flagMX = "https://flagcdn.com/w80/mx.png";
 const flagUS = "https://flagcdn.com/w80/us.png";
 
@@ -169,7 +173,7 @@ export function Header() {
           )}
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden  absolute   right-0 lg:flex items-center justify-end gap-8">
             {navLinks.map((link) => {
               const href = link.href[currentLang];
               return (
@@ -195,11 +199,6 @@ export function Header() {
                 </Link>
               );
             })}
-          </nav>
-
-          {/* Right side actions */}
-          <div className="flex items-center gap-4">
-            {/* Phone */}
             <a
               href="tel:9285550147"
               className={`hidden md:flex items-center gap-2 text-sm font-medium transition-colors ${
@@ -211,8 +210,6 @@ export function Header() {
               <Phone className="w-3 h-3" />
               <span>(928) 555-0147</span>
             </a>
-
-            {/* Language Toggle — tablet/desktop position, unchanged */}
             <button
               onClick={toggleLang}
               className="hidden md:flex items-center gap-2 pl-1 pr-3 py-1 transition-all"
@@ -234,6 +231,45 @@ export function Header() {
                 {currentLang === "en" ? "ES" : "EN"}
               </span>
             </button>
+          </nav>
+
+          {/* Right side actions */}
+          <div className="flex items-center gap-4">
+            {/* Phone */}
+            {/* <a
+              href="tel:9285550147"
+              className={`hidden md:flex items-center gap-2 text-sm font-medium transition-colors ${
+                scrolled
+                  ? "text-slate-700 hover:text-[#A0522D]"
+                  : "text-white/90 hover:text-white"
+              }`}
+            >
+              <Phone className="w-3 h-3" />
+              <span>(928) 555-0147</span>
+            </a> */}
+
+            {/* Language Toggle — tablet/desktop position, unchanged */}
+            {/* <button
+              onClick={toggleLang}
+              className="hidden md:flex items-center gap-2 pl-1 pr-3 py-1 transition-all"
+              aria-label={langAriaLabel}
+              title={langAriaLabel}
+            >
+              <Image
+                src={currentLang === "en" ? flagMX : flagUS}
+                alt={currentLang === "en" ? "Español" : "English"}
+                width={24}
+                height={18}
+                className="object-cover w-6 h-[18px]"
+              />
+              <span
+                className={`text-xs font-bold ${
+                  scrolled ? "text-slate-700" : "text-white"
+                }`}
+              >
+                {currentLang === "en" ? "ES" : "EN"}
+              </span>
+            </button> */}
 
             {/* Mobile-only language toggle — appears here (right, next to menu button) only when scrolled */}
             {scrolled && (
@@ -281,8 +317,17 @@ export function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="lg:hidden bg-white border-t shadow-lg">
-          <nav className="flex flex-col py-4 px-4">
+        <div className="lg:hidden fixed inset-0 top-0 h-[100vh] bg-[#f9ebd9] z-40 overflow-y-auto">
+          <div className="absolute top-4 right-4  ">
+            <button
+              onClick={() => setMobileOpen(false)}
+              aria-label="Close menu"
+              className="p-2 rounded-lg text-[#241812] hover:bg-[#ffae85] border border-[#241812]/30 transition-colors"
+            >
+              <X size={20} />
+            </button>
+          </div>
+          <nav className="flex flex-col pt-[70px] px-4 pb-8 ">
             {navLinks.map((link) => {
               const href = link.href[currentLang];
               return (
@@ -291,7 +336,7 @@ export function Header() {
                   href={href}
                   className={`py-3 px-4 text-sm font-medium uppercase tracking-wide rounded-lg transition-colors ${
                     isActive(href)
-                      ? "text-[#A0522D] bg-[#F7EFE3]"
+                      ? "text-[#F7EFE3] bg-[#A0522D]"
                       : "text-slate-700 hover:bg-[#F7EFE3] hover:text-[#A0522D]"
                   }`}
                 >
@@ -303,10 +348,35 @@ export function Header() {
               href="tel:9285550147"
               className="flex items-center gap-2 py-3 px-4 text-sm font-medium text-slate-700 hover:bg-[#F7EFE3] rounded-lg mt-2"
             >
-              <Phone className="w-4 h-4 text-[#A0522D]" />
+              <Phone className="w-4 h-4 text-[#A0522D] animate-pulse " />
               (928) 555-0147
             </a>
           </nav>
+          <div className="flex items-center mx-auto ">
+            <Link href={logoHref} className="flex items-center">
+              <Image
+                src={logo}
+                alt="Gato Montes Construction"
+                width={70}
+                height={70}
+                className=" w-auto"
+              />
+              {/* <Image
+                  src={logoRound}
+                  alt="Gato Montes Construction"
+                  width={70}
+                  height={70}
+                  className="-ml-3 rounded-full h-[60px] w-[60px]"
+                />
+                <Image
+                  src={logoTextBrown}
+                  alt="Gato Montes Construction"
+                  width={200}
+                  height={70}
+                  className="-ml-3 transition-all duration-300 object-contain h-[70px] w-auto"
+                /> */}
+            </Link>
+          </div>
         </div>
       )}
     </header>

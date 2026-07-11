@@ -8,154 +8,16 @@
   },
   "hero": {
     "title": "Your Trusted Local Handyman",
-    "subtitle": "MAINTENANCE AND REPAIRS IN WICKENBURG, AZ",
-    "description": "With over 20 years of experience, we're neighbors and friends in this community. We offer repairs, maintenance, and small home updates at fair prices and quality work.",
+    "subtitle": "HOME REPAIRS AND MAINTENANCE IN WICKENBURG, AZ",
+    "description": "Over 20 years of quality home repairs and maintenance. Reliable handyman services at fair prices.",
     "ctaPrimary": "Get a Free Quote",
     "ctaSecondary": "See Our Work"
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Repairs, maintenance, and small updates for your home or business — and many more services",
-    "bathroomRemodeling": {
-      "title": "Bathroom Updates & Repairs",
-      "description": "We repair and update fixtures, tile, faucets, and finishes in your bathroom with careful attention to detail."
-    },
-    "flooringTile": {
-      "title": "Flooring & Tile Repair",
-      "description": "Repair and upkeep of flooring, tile work, and general flooring fixes."
-    },
-    "doorsWindows": {
-      "title": "Doors & Windows",
-      "description": "Door and window installation, adjustments, and repairs to improve the safety and look of your property."
-    },
-    "stuccoFences": {
-      "title": "Stucco & Fences",
-      "description": "Stucco and fence repair and upkeep to keep your property protected and looking good year-round."
-    },
-    "drywall": {
-      "title": "Drywall",
-      "description": "Drywall installation and repair, wall patching, and textured finishes."
-    },
-    "painting": {
-      "title": "Interior & Exterior Painting",
-      "description": "Professional painting to refresh and protect your home or business, inside and out."
-    },
-    "cta": "View All Services"
-  },
-  "whyChooseUs": {
-    "title": "Why Choose Us",
-    "subtitle": "The difference is in the details",
-    "experience": {
-      "title": "Over 20 Years of Experience",
-      "description": "Two decades handling repair and maintenance projects in the Wickenburg area."
-    },
-    "quality": {
-      "title": "Fair Pricing",
-      "description": "We offer fair, transparent pricing without cutting corners on quality."
-    },
-    "safety": {
-      "title": "Insured & Safety-Focused",
-      "description": "Insured handyman service, with strict safety protocols on every job."
-    },
-    "local": {
-      "title": "Neighbors and Friends in the Community",
-      "description": "We're part of this community. We know the climate, the materials, and the needs of every property in Arizona."
-    }
-  },
-"projects": {
-  "title": "Featured Projects",
-  "subtitle": "See the quality of our work",
-  "viewProject": "View Project",
-  "viewAll": "View All Projects",
-  "before": "Before",
-  "after": "After",
-  "items": {
-    "1": {
-      "title": "Bathroom Remodeling",
-      "location": "Wickenburg, AZ",
-      "category": "Bathrooms"
-    },
-    "2": {
-      "title": "Kitchen Remodeling",
-      "location": "Wickenburg, AZ",
-      "category": "Flooring & Tile"
-    },
-    "3": {
-      "title": "Stucco Repair & Painting",
-      "location": "Congress, AZ",
-      "category": "Stucco & Painting"
-    }
-  }
-},
-
-  "testimonials": {
-    "title": "What Our Clients Say",
-    "subtitle": "Trusted by homeowners and businesses across Arizona"
-  },
-  "serviceAreas": {
-    "title": "Service Areas",
-    "subtitle": "Serving Wickenburg and nearby communities",
-    "description": "We proudly serve Wickenburg and the surrounding area. For projects beyond 50 miles, give us a call to arrange travel costs. No job is too big or too small."
-  },
-  "contactCTA": {
-    "title": "Have a Project in Mind?",
-    "description": "Contact us today for a free consultation and estimate. We'll take care of the rest.",
-    "button": "Get Started"
-  },
-  "footer": {
-    "company": "Gato Montes Construction",
-    "tagline": "Built With Strength. Delivered With Pride.",
-    "phone": "(928) 555-0147",
-    "email": "info@gatomontesconstruction.com",
-    "address": "123 Main Street, Wickenburg, AZ 85390",
-    "hours": "Mon - Fri: 7:00 AM - 5:00 PM",
-    "rights": "All rights reserved."
-  },
-  "about": {
-    "title": "About Us",
-    "subtitle": "Your trusted partner for home repairs and maintenance in Wickenburg",
-    "story": {
-      "title": "Our Story",
-      "paragraph1": "With over 20 years of experience, Oscar Salazar and his family have been well known in the Wickenburg community as neighbors and friends. Today, they proudly continue serving the community through Gato Montes Construction, providing reliable handyman and home maintenance services, including bathroom updates and repairs, flooring and tile repair, door and window installation, stucco and fence repair, drywall, painting, and many other home improvement services.",
-      "paragraph2": "We understand the challenges of maintaining a property in the Arizona desert and offer lasting solutions at fair prices. As your local handyman team, we proudly serve Wickenburg and the surrounding area, and are happy to travel beyond 50 miles by prior arrangement."
-    },
-    "values": {
-      "title": "Our Values",
-      "integrity": "Integrity in every interaction",
-      "quality": "Quality in every detail",
-      "community": "Neighbors and friends in the community",
-      "innovation": "Practical, effective solutions"
-    },
-    "stats": {
-      "projects": "Projects Completed",
-      "experience": "20+ Years of Experience",
-      "team": "Professional Team",
-      "satisfaction": "Client Satisfaction"
-    }
-  },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "Let's talk about your next project",
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "service": "Service of Interest",
-      "message": "Tell us about your project",
-      "submit": "Send Message",
-      "success": "Thank you! We'll be in touch soon."
-    },
-    "info": {
-      "title": "Get in Touch",
-      "phone": "Phone",
-      "email": "Email",
-      "address": "Address",
-      "hours": "Business Hours"
-    }
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Repairs, maintenance, and small updates for your home or business — and many more services",
+    "subtitle": "Home repairs, maintenance, and quality updates.",
+    "cta": "View All Services",
+    "more": "Learn more",
     "bathroomRemodeling": {
       "title": "Bathroom Updates & Repairs",
       "description": "We repair and update fixtures, tile, faucets, and finishes in your bathroom with careful attention to detail.",
@@ -221,7 +83,138 @@
         "Fence & deck staining",
         "Surface prep & repair"
       ]
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "subtitle": "The difference is in the details",
+    "experience": {
+      "title": "Over 20 Years of Experience",
+      "description": "Two decades handling repair and maintenance projects in the Wickenburg area."
     },
-    "cta": "View All Services"
+    "quality": {
+      "title": "Fair Pricing",
+      "description": "We offer fair, transparent pricing without cutting corners on quality."
+    },
+    "safety": {
+      "title": "Insured & Safety-Focused",
+      "description": "Insured handyman service, with strict safety protocols on every job."
+    },
+    "local": {
+      "title": "Neighbors and Friends in the Community",
+      "description": "We're part of this community. We know the climate, the materials, and the needs of every property in Arizona."
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "See the quality of our work",
+    "viewProject": "View Project",
+    "viewAll": "View All Projects",
+    "before": "Before",
+    "after": "After",
+    "items": {
+      "1": {
+        "title": "Bathroom Remodeling",
+        "location": "Wickenburg, AZ",
+        "category": "Bathrooms"
+      },
+      "2": {
+        "title": "Kitchen Remodeling",
+        "location": "Wickenburg, AZ",
+        "category": "Flooring & Tile"
+      },
+      "3": {
+        "title": "Stucco Repair & Painting",
+        "location": "Congress, AZ",
+        "category": "Stucco & Painting"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by homeowners and businesses across Arizona",
+    "items": {
+      "1": {
+        "role": "Homeowner, Wickenburg",
+        "text": "Oscar Salazar remodeled our bathroom and the attention to detail was amazing. He treated our home like it was his own. Fair pricing and honest work."
+      },
+      "2": {
+        "role": "Homeowner, Congress",
+        "text": "We needed drywall repair and new tile flooring after some water damage. Oscar showed up on time and the work looks better than before. Highly recommend."
+      },
+      "3": {
+        "role": "Homeowners, Wickenburg",
+        "text": "Oscar fixed our stucco, repaired the fence, and repainted the whole exterior. A real neighbor who cares about doing the job right at a reasonable price."
+      }
+    }
+  },
+  "serviceAreas": {
+    "title": "Service Areas",
+    "subtitle": "Serving Wickenburg and nearby communities",
+    "description": "We proudly serve Wickenburg and the surrounding area. For projects beyond 50 miles, give us a call to arrange travel costs. No job is too big or too small."
+  },
+  "contactCTA": {
+    "title": "Need a Reliable Handyman?",
+    "description": "From home repairs and maintenance to bathroom updates and flooring, we're here to help.",
+    "button": "Get a Free Estimate"
+  },
+"footer": {
+    "company": "Gato Montes Construction",
+    "tagline": "Built With Strength. Delivered With Pride.",
+    "phone": "(928) 555-0147",
+    "email": "handymaninwickenburg@gmail.com",
+    "address": "152 Henderson StWickenburg, AZ 85390, USA",
+    "hours": "Mon - Fri: 8:00 AM - 5:00 PM\nSat: 8:00 AM - 12:00 PM\nSun: Closed",
+    "rights": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "designed": "Designed and developed by "
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your trusted partner for home repairs and maintenance in Wickenburg",
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "With over 20 years of experience, Oscar Salazar and his family have been well known in the Wickenburg community as neighbors and friends. Today, they proudly continue serving the community through Gato Montes Construction, providing reliable handyman and home maintenance services, including bathroom updates and repairs, flooring and tile repair, door and window installation, stucco and fence repair, drywall, painting, and many other home improvement services.",
+      "paragraph2": "We understand the challenges of maintaining a property in the Arizona desert and offer lasting solutions at fair prices. As your local handyman team, we proudly serve Wickenburg and the surrounding area, and are happy to travel beyond 50 miles by prior arrangement.",
+      "yearsOfExcellence": "Years of Excellence"
+      
+    },
+    "values": {
+      "title": "Our Values",
+      "integrity": "Integrity in every interaction",
+      "quality": "Quality in every detail",
+      "community": "Neighbors and friends in the community",
+      "innovation": "Practical, effective solutions"
+    },
+    "stats": {
+      "projects": "Projects Completed",
+      "experience": "Years of Experience",
+      "quality": "Commitment to Quality",
+      "satisfaction": "Client Satisfaction"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's talk about your next project",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "service": "Service of Interest",
+      "message": "Tell us about your project",
+      "submit": "Send Message",
+      "success": "Thank you! We'll be in touch soon."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Business Hours"
+    }
   }
 }
