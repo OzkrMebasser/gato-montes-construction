@@ -27,7 +27,7 @@ const areas = [
   "Surprise",
   "Peoria",
   "Sun City West",
-  "Anthem",
+ 
 ];
 
 export function ServiceAreasSection() {

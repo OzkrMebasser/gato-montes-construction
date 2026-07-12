@@ -51,19 +51,23 @@ const jsonLd = {
     { '@type': 'City', name: 'Morristown' },
     { '@type': 'City', name: 'Yarnell' },
     { '@type': 'City', name: 'Wittmann' },
+    { '@type': 'City', name: 'Surprise' },
+    { '@type': 'City', name: 'Peoria' },
+    { '@type': 'City', name: 'Sun City West' },
+    { '@type': 'City', name: 'Anthem' },
   ],
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '07:00',
+      opens: '08:00',
       closes: '17:00',
     },
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Saturday'],
-      opens: '09:00',
-      closes: '13:00',
+      opens: '08:00',
+      closes: '12:00',
     },
   ],
   sameAs: [

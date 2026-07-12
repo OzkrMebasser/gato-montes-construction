@@ -13,8 +13,8 @@ import "maplibre-gl/dist/maplibre-gl.css";
 const WICKENBURG_LAT = 33.9686;
 const WICKENBURG_LNG = -112.7307;
 
-// 50 millas -> kilómetros (turf usa km)
-const RADIUS_MILES = 50;
+// 40 millas -> kilómetros (turf usa km)
+const RADIUS_MILES = 40;
 const RADIUS_KM = RADIUS_MILES * 1.60934;
 
 export default function ServiceAreaMap() {
