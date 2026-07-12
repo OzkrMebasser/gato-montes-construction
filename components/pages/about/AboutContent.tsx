@@ -14,7 +14,6 @@ import {
   Shield,
   HardHat,
   MapPin,
- 
 } from "lucide-react";
 import { rye } from "@/lib/fonts";
 
@@ -196,10 +195,9 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div ref={contentRef}>
-              <span className="text-[#A0522D] font-semibold text-sm uppercase tracking-[0.2em]">
-                Our Story
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#241812] mt-3 mb-8">
+              <h2
+                className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-[#3b2317] leading-tight mb-6`}
+              >
                 {t("about.story.title")}
               </h2>
               <p className="text-slate-600 leading-relaxed mb-6">
@@ -219,7 +217,9 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-[#241812] text-white rounded-2xl p-6 shadow-xl hidden md:block">
                 <p className="text-3xl font-bold text-[#D9A876]">20+</p>
-                <p className="text-sm text-white/70">{t("about.story.yearsOfExcellence")}</p>
+                <p className="text-sm text-white/70">
+                  {t("about.story.yearsOfExcellence")}
+                </p>
               </div>
             </div>
           </div>
@@ -230,7 +230,9 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
       <section className="py-20 md:py-28 bg-[#F7EFE3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#241812]">
+            <h2
+              className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-[#3b2317] leading-tight mb-6`}
+            >
               {t("about.values.title")}
             </h2>
           </div>

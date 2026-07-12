@@ -14,78 +14,77 @@
     "ctaSecondary": "Ver Nuestro Trabajo"
   },
   "services": {
-  "title": "Nuestros Servicios",
-  "subtitle": "Reparaciones, mantenimiento y mejoras de calidad para el hogar.",
-  "cta": "Ver Todos los Servicios",
-  "more": "Saber más",
-  "bathroomRemodeling": {
-    "title": "Actualizaciones y Reparaciones de Baño",
-    "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles.",
-    "features": [
-      "Actualización de tocador y accesorios",
-      "Reparación de regadera y tina",
-      "Reparación de azulejo y boquilla (grout)",
-      "Reparación de grifería y accesorios",
-      "Arreglos de iluminación y ventilación"
-    ]
+    "title": "Nuestros Servicios",
+    "subtitle": "Reparaciones, mantenimiento y mejoras de calidad para el hogar.",
+    "cta": "Ver Todos los Servicios",
+    "more": "Saber más",
+    "bathroomRemodeling": {
+      "title": "Actualizaciones y Reparaciones de Baño",
+      "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles.",
+      "features": [
+        "Actualización de tocador y accesorios",
+        "Reparación de regadera y tina",
+        "Reparación de azulejo y boquilla (grout)",
+        "Reparación de grifería y accesorios",
+        "Arreglos de iluminación y ventilación"
+      ]
+    },
+    "flooringTile": {
+      "title": "Reparación Pisos y Azulejo",
+      "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general.",
+      "features": [
+        "Reparación de pisos",
+        "Reparación de azulejo y boquilla (grout)",
+        "Reparación de parches en subpiso",
+        "Instalación y reparación de zoclo",
+        "Retoques de boquilla y sellador"
+      ]
+    },
+    "doorsWindows": {
+      "title": "Puertas y Ventanas",
+      "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad.",
+      "features": [
+        "Instalación y reparación de puertas",
+        "Instalación y reparación de ventanas",
+        "Herrajes y chapas",
+        "Impermeabilización",
+        "Reparación de marcos y molduras"
+      ]
+    },
+    "stuccoFences": {
+      "title": "Estuco y Cercos",
+      "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año.",
+      "features": [
+        "Reparación de estuco",
+        "Reparación de cercos",
+        "Reparación e instalación de portones",
+        "Reparación de grietas y parches",
+        "Impermeabilización"
+      ]
+    },
+    "drywall": {
+      "title": "Drywall",
+      "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados.",
+      "features": [
+        "Reparación de parches en drywall",
+        "Reparación de grietas y parches",
+        "Igualado de textura",
+        "Reparación por daño de agua",
+        "Reparación de parches en techo"
+      ]
+    },
+    "painting": {
+      "title": "Pintura Interior y Exterior",
+      "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera.",
+      "features": [
+        "Pintura interior",
+        "Pintura exterior",
+        "Retoques y ajuste de color",
+        "Tinte para cercos y decks",
+        "Preparación y reparación de superficies"
+      ]
+    }
   },
-  "flooringTile": {
-    "title": "Reparación Pisos y Azulejo",
-    "description": "Reparación y mantenimiento de pisos, trabajo de azulejo (tile) y arreglos de flooring en general.",
-    "features": [
-      "Reparación de pisos",
-      "Reparación de azulejo y boquilla (grout)",
-      "Reparación de parches en subpiso",
-      "Instalación y reparación de zoclo",
-      "Retoques de boquilla y sellador"
-    ]
-  },
-  "doorsWindows": {
-    "title": "Puertas y Ventanas",
-    "description": "Instalación de puertas y ventanas, ajustes y reparaciones para mejorar la seguridad y apariencia de su propiedad.",
-    "features": [
-      "Instalación y reparación de puertas",
-      "Instalación y reparación de ventanas",
-      "Herrajes y chapas",
-      "Impermeabilización",
-      "Reparación de marcos y molduras"
-    ]
-  },
-  "stuccoFences": {
-    "title": "Estuco y Cercos",
-    "description": "Reparación y mantenimiento de estuco y cercos para mantener su propiedad protegida y con buena apariencia todo el año.",
-    "features": [
-      "Reparación de estuco",
-      "Reparación de cercos",
-      "Reparación e instalación de portones",
-      "Reparación de grietas y parches",
-      "Impermeabilización"
-    ]
-  },
-  "drywall": {
-    "title": "Drywall",
-    "description": "Instalación y reparación de drywall, parchado de paredes y acabados texturizados.",
-    "features": [
-      "Reparación de parches en drywall",
-      "Reparación de grietas y parches",
-      "Igualado de textura",
-      "Reparación por daño de agua",
-      "Reparación de parches en techo"
-    ]
-  },
-  "painting": {
-    "title": "Pintura Interior y Exterior",
-    "description": "Pintura profesional para refrescar y proteger su hogar o negocio, dentro y fuera.",
-    "features": [
-      "Pintura interior",
-      "Pintura exterior",
-      "Retoques y ajuste de color",
-      "Tinte para cercos y decks",
-      "Preparación y reparación de superficies"
-    ]
-  }
-  
-},
   "whyChooseUs": {
     "title": "Por Qué Elegirnos",
     "subtitle": "La diferencia está en los detalles",
@@ -160,19 +159,19 @@
     "button": "Solicita un Presupuesto Gratis"
   },
   "footer": {
-  "company": "Gato Montes Construction",
-  "tagline": "Construido con Fuerza. Entregado con Orgullo.",
-  "phone": "(928) 555-0147",
-  "email": "info@gatomontesconstruction.com",
-  "address": "152 Henderson StWickenburg, AZ 85390, USA",
- "hours": "Lun - Vie: 8:00 AM - 5:00 PM\nSáb: 8:00 AM - 12:00 PM\nDom: Cerrado",
-  "rights": "Todos los derechos reservados.",
-  "quickLinks": "Enlaces Rápidos",
-  "followUs": "Síguenos",
-  "privacyPolicy": "Política de Privacidad",
-  "termsOfService": "Términos de Servicio",
-  "designed": "Diseñado y desarrollado por "
-},
+    "company": "Gato Montes Construction",
+    "tagline": "Construido con Fuerza. Entregado con Orgullo.",
+    "phone": "(928) 555-0147",
+    "email": "info@gatomontesconstruction.com",
+    "address": "152 Henderson StWickenburg, AZ 85390, USA",
+    "hours": "Lun - Vie: 8:00 AM - 5:00 PM\nSáb: 8:00 AM - 12:00 PM\nDom: Cerrado",
+    "rights": "Todos los derechos reservados.",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "designed": "Diseñado y desarrollado por "
+  },
   "about": {
     "title": "Sobre Nosotros",
     "subtitle": "Su socio de confianza para reparaciones y mantenimiento del hogar en Wickenburg",
@@ -206,7 +205,12 @@
       "service": "Servicio de Interés",
       "message": "Cuéntenos sobre su proyecto",
       "submit": "Enviar Mensaje",
-      "success": "¡Gracias! Nos pondremos en contacto pronto."
+      "selectPlaceholder": "Seleccione un servicio",
+      "other": "Otro",
+      "success": "¡Gracias! Nos pondremos en contacto pronto.",
+      "week": "Lun - Vie: 8:00 AM - 5:00 PM",
+      "sat" : "\nSáb: 8:00 AM - 12:00 PM",
+      "sun" : "\nDom: Cerrado"
     },
     "info": {
       "title": "Póngase en Contacto",
@@ -216,5 +220,4 @@
       "hours": "Horario de Atención"
     }
   }
-
 }

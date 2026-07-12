@@ -3,13 +3,24 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import emailjs from "@emailjs/browser";
 import { useTranslation } from "@/lib/i18n/client";
-import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle, XCircle } from "lucide-react";
 import { rye } from "@/lib/fonts";
+import ServiceAreaMap from "@/components/home/ServiceAreaMap";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
+
+const serviceOptions = [
+  "bathroomRemodeling",
+  "flooringTile",
+  "doorsWindows",
+  "stuccoFences",
+  "drywall",
+  "painting",
+];
 
 export function ContactContent({ lang }: { lang: "en" | "es" }) {
   const { t, i18n } = useTranslation();
@@ -21,9 +32,13 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
   }, [lang, i18n]);
 
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
+
   const heroRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
+  const contactFormRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -66,7 +81,25 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setError(false);
+    setSending(true);
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        contactFormRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      )
+      .then(() => {
+        setSubmitted(true);
+        setSending(false);
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        setError(true);
+        setSending(false);
+      });
   };
 
   return (
@@ -85,7 +118,7 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
-       <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-16 py-32 pt-40 ">
+        <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-16 py-32 pt-40 ">
           <h1
             className={` uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-white leading-tight mb-6`}
           >
@@ -99,7 +132,12 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-20 md:py-12 bg-white">
+        <h2
+          className={` text-center uppercase hero-title ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-[#241812] leading-tight mb-6`}
+        >
+          {t("contact.info.title")}
+        </h2>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Form */}
@@ -115,13 +153,18 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  ref={contactFormRef}
+                  onSubmit={handleSubmit}
+                  className="space-y-6"
+                >
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-2">
                       {t("contact.form.name")}
                     </label>
                     <input
                       type="text"
+                      name="from_name"
                       required
                       className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all"
                       placeholder="John Smith"
@@ -134,6 +177,7 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       </label>
                       <input
                         type="email"
+                        name="from_email"
                         required
                         className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all"
                         placeholder="john@example.com"
@@ -145,6 +189,7 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       </label>
                       <input
                         type="tel"
+                        name="phone"
                         className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all"
                         placeholder="(928) 555-0147"
                       />
@@ -154,17 +199,22 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                     <label className="block text-sm font-semibold text-slate-700 mb-2">
                       {t("contact.form.service")}
                     </label>
-                    <select className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all bg-white">
-                      <option value="">Select a service</option>
-                      <option value="bathroomRemodeling">
-                        Bathroom Remodeling
+                    <select
+                      name="service"
+                      defaultValue=""
+                      className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all bg-white"
+                    >
+                      <option value="">
+                        {t("contact.form.selectPlaceholder")}
                       </option>
-                      <option value="flooringTile">Flooring & Tile</option>
-                      <option value="doorsWindows">Doors & Windows</option>
-                      <option value="stuccoFences">Stucco & Fences</option>
-                      <option value="drywall">Drywall</option>
-                      <option value="painting">Painting</option>
-                      <option value="other">Other</option>
+                      {serviceOptions.map((key) => (
+                        <option key={key} value={t(`services.${key}.title`)}>
+                          {t(`services.${key}.title`)}
+                        </option>
+                      ))}
+                      <option value={t("contact.form.other")}>
+                        {t("contact.form.other")}
+                      </option>
                     </select>
                   </div>
                   <div>
@@ -172,17 +222,30 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       {t("contact.form.message")}
                     </label>
                     <textarea
+                      name="message"
                       required
                       rows={5}
                       className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all resize-none"
                       placeholder="Tell us about your project..."
                     />
                   </div>
+
+                  {error && (
+                    <div className="flex items-center gap-2 text-red-600 text-sm bg-red-50 border border-red-200 rounded-lg px-4 py-3">
+                      <XCircle className="w-4 h-4 flex-shrink-0" />
+                      <span>
+                        Hubo un error al enviar tu mensaje. Intenta de nuevo o
+                        llámanos directamente.
+                      </span>
+                    </div>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full bg-[#A0522D] hover:bg-[#8B4429] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#A0522D]/25 hover:-translate-y-0.5"
+                    disabled={sending}
+                    className="w-full bg-[#A0522D] hover:bg-[#8B4429] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#A0522D]/25 hover:-translate-y-0.5"
                   >
-                    {t("contact.form.submit")}
+                    {sending ? "Enviando..." : t("contact.form.submit")}
                   </button>
                 </form>
               )}
@@ -190,9 +253,6 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
 
             {/* Contact Info */}
             <div ref={infoRef}>
-              <h2 className="text-2xl font-bold text-[#241812] mb-8">
-                {t("contact.info.title")}
-              </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-6 bg-[#F7EFE3] rounded-2xl">
                   <div className="w-12 h-12 rounded-xl bg-[#EAD9C0] text-[#A0522D] flex items-center justify-center flex-shrink-0">
@@ -219,10 +279,10 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       {t("contact.info.email")}
                     </h3>
                     <a
-                      href="mailto:info@desertridgeconstruction.com"
+                      href="mailto:handymaninwickenburg@gmail.com"
                       className="text-slate-600 hover:text-[#A0522D] transition-colors"
                     >
-                      info@desertridgeconstruction.com
+                      handymaninwickenburg@gmail.com
                     </a>
                   </div>
                 </div>
@@ -235,7 +295,7 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       {t("contact.info.address")}
                     </h3>
                     <p className="text-slate-600">
-                      123 Main Street, Wickenburg, AZ 85390
+                      152 Henderson StWickenburg, AZ 85390, USA
                     </p>
                   </div>
                 </div>
@@ -247,31 +307,23 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                     <h3 className="font-semibold text-[#241812]">
                       {t("contact.info.hours")}
                     </h3>
-                    <p className="text-slate-600">
-                      Mon - Fri: 7:00 AM - 5:00 PM
-                    </p>
-                    <p className="text-slate-600">Sat: 8:00 AM - 12:00 PM</p>
+                    <p className="text-slate-600">{t("contact.form.week")}</p>{" "}
+                    <p className="text-slate-600">{t("contact.form.sat")}</p>
+                    <p className="text-slate-600">{t("contact.form.sun")}</p>
                   </div>
                 </div>
-              </div>
-
-              {/* Map placeholder */}
-              <div className="mt-8 aspect-video rounded-2xl overflow-hidden bg-slate-100 border border-[#EAD9C0]">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106698.8477456856!2d-112.7857!3d33.9684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b37e0b8e2e7c1%3A0x8e5e8e5e8e5e8e5e!2sWickenburg%2C%20AZ!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Wickenburg Location"
-                />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* <section className="relative h-[400px] md:h-[500px] lg:h-[600px]">
+       
+
+        <ServiceAreaMap/>
+      </section>   */}
+
     </div>
   );
 }

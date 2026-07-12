@@ -159,7 +159,7 @@
     "description": "From home repairs and maintenance to bathroom updates and flooring, we're here to help.",
     "button": "Get a Free Estimate"
   },
-"footer": {
+  "footer": {
     "company": "Gato Montes Construction",
     "tagline": "Built With Strength. Delivered With Pride.",
     "phone": "(928) 555-0147",
@@ -181,7 +181,6 @@
       "paragraph1": "With over 20 years of experience, Oscar Salazar and his family have been well known in the Wickenburg community as neighbors and friends. Today, they proudly continue serving the community through Gato Montes Construction, providing reliable handyman and home maintenance services, including bathroom updates and repairs, flooring and tile repair, door and window installation, stucco and fence repair, drywall, painting, and many other home improvement services.",
       "paragraph2": "We understand the challenges of maintaining a property in the Arizona desert and offer lasting solutions at fair prices. As your local handyman team, we proudly serve Wickenburg and the surrounding area, and are happy to travel beyond 50 miles by prior arrangement.",
       "yearsOfExcellence": "Years of Excellence"
-      
     },
     "values": {
       "title": "Our Values",
@@ -207,7 +206,12 @@
       "service": "Service of Interest",
       "message": "Tell us about your project",
       "submit": "Send Message",
-      "success": "Thank you! We'll be in touch soon."
+      "success": "Thank you! We'll be in touch soon.",
+      "selectPlaceholder": "Select a service",
+      "other": "Other",
+      "week": "Mon - Fri: 8:00 AM - 5:00 PM",
+      "sat": "\nSat: 8:00 AM - 12:00 PM",
+      "sun": "\n Sun: Closed"
     },
     "info": {
       "title": "Get in Touch",
