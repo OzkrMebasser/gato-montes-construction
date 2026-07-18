@@ -22,9 +22,20 @@ const serviceKeys = [
   "painting",
 ];
 
+//  'https://www.facebook.com/handymaninwickenburg',
+//   'https://www.instagram.com/gatomonteshandyman/'
+
 const socialLinks = [
-  { name: "Facebook", href: "#", icon: Facebook },
-  { name: "Instagram", href: "#", icon: Instagram },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/handymaninwickenburg",
+    icon: Facebook,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/gatomonteshandyman/",
+    icon: Instagram,
+  },
   { name: "Yelp", href: "#", icon: FaYelp },
   { name: "Nextdoor", href: "#", icon: BsHouseFill, flip: true },
 ];
@@ -39,6 +50,8 @@ function SocialIcons({ gap = "gap-3" }: { gap?: string }) {
             key={social.name}
             href={social.href}
             className="flex flex-col items-center gap-1.5 group"
+            rel="noopener noreferrer" 
+            target="_blank"
           >
             <span className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 group-hover:bg-[#A0522D] group-hover:text-white transition-all">
               <Icon size={16} className={social.flip ? "-scale-x-100" : ""} />
@@ -173,7 +186,7 @@ export function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-sm text-center sm:text-left">
               &copy; {new Date().getFullYear()} Gato Montes Construction.{" "}
-           <span className="block lg:inline">   {t("footer.rights")}</span>
+              <span className="block lg:inline"> {t("footer.rights")}</span>
             </p>
             <div className="flex items-center gap-6 text-sm text-white/40">
               <Link href="#" className="hover:text-white/70 transition-colors">

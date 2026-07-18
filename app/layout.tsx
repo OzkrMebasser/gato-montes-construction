@@ -1,10 +1,13 @@
-import './globals.css';
+
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 const inter = Inter({ subsets: ['latin'] });
+import './globals.css';
+
+
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://handymaninwickenburg.com'),
@@ -28,12 +31,12 @@ const jsonLd = {
   url: 'https://handymaninwickenburg.com',
   telephone: '+1-928-555-0147',
   email: 'info@gatomontesconstruction.com',
-  image: 'https://handymaninwickenburg.com/images/gato-montes-logo.png',
-  logo: 'https://handymaninwickenburg.com/images/gato-montes-logo.png',
+  image: 'https://res.cloudinary.com/dmqqhcf49/image/upload/v1783217903/nuevo-logo-gatomontes_qszinl.png',
+  logo: 'https://res.cloudinary.com/dmqqhcf49/image/upload/v1783387885/logo-nuevo-gato-montes_odncot.png',
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '123 Main Street',
+    streetAddress: '152 Henderson St',
     addressLocality: 'Wickenburg',
     addressRegion: 'AZ',
     postalCode: '85390',
@@ -71,8 +74,9 @@ const jsonLd = {
     },
   ],
   sameAs: [
-  'https://www.facebook.com/gatomontesconstruction',
-  'https://www.instagram.com/gatomontesconstruction',
+  'https://www.facebook.com/handymaninwickenburg',
+  'https://www.instagram.com/gatomonteshandyman/'
+
 ],
   makesOffer: [
     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Bathroom Remodeling' } },
