@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import  ActionButton from '@/components/layout/ActionButton';
 const inter = Inter({ subsets: ['latin'] });
 import './globals.css';
 
@@ -19,6 +20,14 @@ export const metadata: Metadata = {
     description: 'Trusted handyman and construction services in Wickenburg, Arizona.',
     type: 'website',
     locale: 'en_US',
+    images: [
+    {
+      url: 'https://res.cloudinary.com/dmqqhcf49/image/upload/v1783217903/nuevo-logo-gatomontes_qszinl.png',
+      width: 1200,
+      height: 630,
+      alt: 'Bathroom and home remodelings by Gato Montes Construction - Handyman in Wickenburg, AZ',
+    },
+  ],
   },
 };
 
@@ -29,7 +38,7 @@ const jsonLd = {
   alternateName: 'Handyman in Wickenburg',
   description: 'Trusted handyman and construction services in Wickenburg, Arizona. Bathroom remodeling, flooring & tile, doors & windows, stucco & fence repair, drywall, and painting.',
   url: 'https://handymaninwickenburg.com',
-  telephone: '+1-928-555-0147',
+  telephone: '+1-928-464-5014',
   email: 'info@gatomontesconstruction.com',
   image: 'https://res.cloudinary.com/dmqqhcf49/image/upload/v1783217903/nuevo-logo-gatomontes_qszinl.png',
   logo: 'https://res.cloudinary.com/dmqqhcf49/image/upload/v1783387885/logo-nuevo-gato-montes_odncot.png',
@@ -75,7 +84,8 @@ const jsonLd = {
   ],
   sameAs: [
   'https://www.facebook.com/handymaninwickenburg',
-  'https://www.instagram.com/gatomonteshandyman/'
+  'https://www.instagram.com/gatomonteshandyman/',
+  'https://nextdoor.com/pages/gato-montes-construction-wickenburg-az/'
 
 ],
   makesOffer: [
@@ -103,6 +113,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased bg-white text-slate-900`}>
         <Header />
+        <ActionButton />
         <main>{children}</main>
         <Footer />
       </body>

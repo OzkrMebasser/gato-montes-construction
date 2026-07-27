@@ -22,8 +22,7 @@ const serviceKeys = [
   "painting",
 ];
 
-//  'https://www.facebook.com/handymaninwickenburg',
-//   'https://www.instagram.com/gatomonteshandyman/'
+
 
 const socialLinks = [
   {
@@ -37,7 +36,7 @@ const socialLinks = [
     icon: Instagram,
   },
   { name: "Yelp", href: "#", icon: FaYelp },
-  { name: "Nextdoor", href: "#", icon: BsHouseFill, flip: true },
+  { name: "Nextdoor", href: "https://nextdoor.com/pages/gato-montes-construction-wickenburg-az/", icon: BsHouseFill, flip: true },
 ];
 
 function SocialIcons({ gap = "gap-3" }: { gap?: string }) {
@@ -139,7 +138,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="text-[#D9A876] mt-1 w-3 h-3 flex-shrink-0" />
                 <a
-                  href="tel:9285550147"
+                  href="tel:+19284645014"
                   className="text-white/60 hover:text-[#D9A876] transition-colors text-sm"
                 >
                   {t("footer.phone")}

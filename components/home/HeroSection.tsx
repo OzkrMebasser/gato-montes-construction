@@ -94,11 +94,11 @@ export function HeroSection() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="tel:9285550147"
+              href="tel:+19284645014"
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-lg backdrop-blur-sm transition-all duration-300 border border-white/20 hover:-translate-y-0.5"
             >
               <Phone className="w-3 h-3" />
-              (928) 555-0147
+              (928) 464-5014
             </a>
           </div>
         </div>

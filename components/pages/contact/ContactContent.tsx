@@ -263,10 +263,10 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       {t("contact.info.phone")}
                     </h3>
                     <a
-                      href="tel:9285550147"
+                      href="tel:+19284645014"
                       className="text-slate-600 hover:text-[#A0522D] transition-colors"
                     >
-                      (928) 555-0147
+                      (928) 464-5014
                     </a>
                   </div>
                 </div>

@@ -18,7 +18,7 @@ export function HomeContent({ lang }: { lang: 'en' | 'es' }) {
       i18n.changeLanguage(lang);
     }
   }, [lang, i18n]);
-
+  
   return (
     <>
       <HeroSection />

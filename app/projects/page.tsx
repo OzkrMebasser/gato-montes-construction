@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: 'Our Projects | Gato Montes Construction',
   description: 'See our recent handyman and remodeling projects across Wickenburg, Congress, and the surrounding Arizona desert communities.',
   alternates: {
-    canonical: 'https://tudominio.com/projects',
+    canonical: 'https://handymaninwickenburg.com/projects',
     languages: {
-      en: 'https://tudominio.com/projects',
-      es: 'https://tudominio.com/proyectos',
+      en: 'https://handymaninwickenburg.com/projects',
+      es: 'https://handymaninwickenburg.com/proyectos',
     },
   },
   openGraph: {

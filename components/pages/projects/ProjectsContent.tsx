@@ -1,24 +1,59 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useTranslation } from '@/lib/i18n/client';
-import { MapPin, Calendar } from 'lucide-react';
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslation } from "@/lib/i18n/client";
+import { MapPin, Calendar } from "lucide-react";
+import { rye } from "@/lib/fonts";
 
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
 const allProjects = [
-  { id: 1, title: 'Wickenburg Ranch Estate', location: 'Wickenburg, AZ', category: 'Residential', year: '2023', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', description: 'A stunning custom home featuring desert-modern architecture and premium finishes.' },
-  { id: 2, title: 'Desert Vista Commercial Center', location: 'Wickenburg, AZ', category: 'Commercial', year: '2023', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80', description: 'A mixed-use commercial development featuring retail spaces and offices.' },
-  { id: 3, title: 'Saguaro Valley Remodel', location: 'Congress, AZ', category: 'Remodeling', year: '2022', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', description: 'Complete renovation transforming a ranch home into a modern desert retreat.' },
+  {
+    id: 1,
+    category: "Bathrooms",
+    location: "Wickenburg, AZ",
+    year: "2023",
+    image:
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    description: "Full bathroom update with new fixtures, tile, and finishes.",
+  },
+  {
+    id: 2,
+    category: "Flooring & Tile",
+    location: "Wickenburg, AZ",
+    year: "2023",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    description:
+      "New flooring installation and tile repair throughout the home.",
+  },
+  {
+    id: 3,
+    category: "Stucco & Fences",
+    location: "Congress, AZ",
+    year: "2022",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    description:
+      "Stucco repair and fence restoration for a full exterior refresh.",
+  },
 ];
 
-const categories = ['All', 'Residential', 'Commercial', 'Remodeling'];
+const categories = [
+  "All",
+  "Bathrooms",
+  "Flooring & Tile",
+  "Doors & Windows",
+  "Stucco & Fences",
+  "Drywall",
+  "Painting",
+];
 
-export function ProjectsContent({ lang }: { lang: 'en' | 'es' }) {
+export function ProjectsContent({ lang }: { lang: "en" | "es" }) {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
@@ -27,20 +62,21 @@ export function ProjectsContent({ lang }: { lang: 'en' | 'es' }) {
     }
   }, [lang, i18n]);
 
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
   const heroRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  const filteredProjects = activeCategory === 'All'
-    ? allProjects
-    : allProjects.filter((p) => p.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "All"
+      ? allProjects
+      : allProjects.filter((p) => p.category === activeCategory);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        '.projects-hero-title',
+        ".projects-hero-title",
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+        { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
       );
     });
     return () => ctx.revert();
@@ -52,34 +88,37 @@ export function ProjectsContent({ lang }: { lang: 'en' | 'es' }) {
       gsap.fromTo(
         gridRef.current!.children,
         { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: 'power3.out' }
+        { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power3.out" },
       );
     });
     return () => ctx.revert();
   }, [activeCategory]);
 
+  const largeHeroImg = "";
   return (
     <>
       {/* Hero */}
       <section
         ref={heroRef}
-        className="relative min-h-[45vh] flex items-center bg-[#241812]"
+        className="relative min-h-[100vh] flex items-center"
       >
         <div className="absolute inset-0">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-25"
+            className="absolute inset-0 bg-cover bg-center "
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')`,
+              backgroundImage: `url('https://res.cloudinary.com/dmqqhcf49/image/upload/v1784658630/home-repairs-hero_zda06k.png')`,
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/60 to-[#241812]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#241812]/30 via-[#241812]/60 to-[#241812]/80" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-          <h1 className="projects-hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            {t('projects.title')}
+        <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-16 py-32 pt-40">
+          <h1
+            className={`projects-hero-title uppercase ${rye.className} text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-bold text-white leading-tight mb-6`}
+          >
+            {t("projects.title")}
           </h1>
           <p className="text-lg text-white/70 max-w-2xl">
-            {t('projects.subtitle')}
+            {t("projects.subtitle")}
           </p>
         </div>
       </section>
@@ -94,8 +133,8 @@ export function ProjectsContent({ lang }: { lang: 'en' | 'es' }) {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeCategory === cat
-                    ? 'bg-[#A0522D] text-white shadow-lg shadow-[#A0522D]/25'
-                    : 'bg-[#F7EFE3] text-slate-600 hover:bg-[#EAD9C0]'
+                    ? "bg-[#A0522D] text-white shadow-lg shadow-[#A0522D]/25"
+                    : "bg-[#F7EFE3] text-slate-600 hover:bg-[#EAD9C0]"
                 }`}
               >
                 {cat}
@@ -115,7 +154,7 @@ export function ProjectsContent({ lang }: { lang: 'en' | 'es' }) {
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={project.category}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -129,9 +168,6 @@ export function ProjectsContent({ lang }: { lang: 'en' | 'es' }) {
                       {project.year}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-[#241812] mb-2">
-                    {project.title}
-                  </h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-4">
                     {project.description}
                   </p>

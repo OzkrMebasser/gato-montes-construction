@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: 'Contáctenos | Gato Montes Construction',
   description: 'Obtenga una cotización gratis para su proyecto. Llámenos o envíenos un mensaje — servimos Wickenburg, Arizona y sus alrededores.',
   alternates: {
-    canonical: 'https://tudominio.com/contacto',
+    canonical: 'https://handymaninwickenburg.com/contacto',
     languages: {
-      en: 'https://tudominio.com/contact',
-      es: 'https://tudominio.com/contacto',
+      en: 'https://handymaninwickenburg.com/contact',
+      es: 'https://handymaninwickenburg.com/contacto',
     },
   },
   openGraph: {

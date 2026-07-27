@@ -33,11 +33,11 @@ export function ContactCTASection() {
             <ArrowRight className="w-4 h-4" />
           </Link>
           <a
-            href="tel:9285550147"
+            href="tel:+19284645014"
             className="inline-flex items-center gap-2 bg-[#8B4429] hover:bg-[#6B3220] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg"
           >
             <Phone className="w-4 h-4" />
-            (928) 555-0147
+            (928) 464-5014
           </a>
         </div>
       </div>

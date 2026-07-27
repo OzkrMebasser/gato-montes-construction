@@ -156,12 +156,13 @@
   "contactCTA": {
     "title": "¿Necesitas un Handyman de Confianza?",
     "description": "Desde reparaciones y mantenimiento del hogar hasta remodelaciones de baños e instalación de pisos, estamos aquí para ayudarte.",
-    "button": "Solicita un Presupuesto Gratis"
+    "button": "Solicita un Presupuesto Gratis",
+     "callCTA": "¿Necesitas ayuda? ¡Llámanos!"
   },
   "footer": {
     "company": "Gato Montes Construction",
     "tagline": "Construido con Fuerza. Entregado con Orgullo.",
-    "phone": "(928) 555-0147",
+    "phone": "(928) 464 5014",
     "email": "handymaninwickenburg@gmail.com",
     "address": "152 Henderson St, Wickenburg, AZ 85390, USA",
     "hours": "Lun - Vie: 8:00 AM - 5:00 PM\nSáb: 8:00 AM - 12:00 PM\nDom: Cerrado",

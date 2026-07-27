@@ -200,7 +200,7 @@ export function Header() {
               );
             })}
             <a
-              href="tel:9285550147"
+              href="tel:+19284645014"
               className={`hidden md:flex items-center gap-2 text-sm font-medium transition-colors ${
                 scrolled
                   ? "text-slate-700 hover:text-[#A0522D]"
@@ -208,7 +208,7 @@ export function Header() {
               }`}
             >
               <Phone className="w-3 h-3" />
-              <span>(928) 555-0147</span>
+              <span>(928) 464-5014</span>
             </a>
             <button
               onClick={toggleLang}
@@ -345,11 +345,11 @@ export function Header() {
               );
             })}
             <a
-              href="tel:9285550147"
+              href="tel:+19284645014"
               className="flex items-center gap-2 py-3 px-4 text-sm font-medium text-slate-700 hover:bg-[#F7EFE3] rounded-lg mt-2"
             >
               <Phone className="w-4 h-4 text-[#A0522D] animate-pulse " />
-              (928) 555-0147
+              (928)464-5014
             </a>
           </nav>
           <div className="flex items-center mx-auto ">
