@@ -235,41 +235,7 @@ export function Header() {
 
           {/* Right side actions */}
           <div className="flex items-center gap-4">
-            {/* Phone */}
-            {/* <a
-              href="tel:9285550147"
-              className={`hidden md:flex items-center gap-2 text-sm font-medium transition-colors ${
-                scrolled
-                  ? "text-slate-700 hover:text-[#A0522D]"
-                  : "text-white/90 hover:text-white"
-              }`}
-            >
-              <Phone className="w-3 h-3" />
-              <span>(928) 555-0147</span>
-            </a> */}
-
-            {/* Language Toggle — tablet/desktop position, unchanged */}
-            {/* <button
-              onClick={toggleLang}
-              className="hidden md:flex items-center gap-2 pl-1 pr-3 py-1 transition-all"
-              aria-label={langAriaLabel}
-              title={langAriaLabel}
-            >
-              <Image
-                src={currentLang === "en" ? flagMX : flagUS}
-                alt={currentLang === "en" ? "Español" : "English"}
-                width={24}
-                height={18}
-                className="object-cover w-6 h-[18px]"
-              />
-              <span
-                className={`text-xs font-bold ${
-                  scrolled ? "text-slate-700" : "text-white"
-                }`}
-              >
-                {currentLang === "en" ? "ES" : "EN"}
-              </span>
-            </button> */}
+           
 
             {/* Mobile-only language toggle — appears here (right, next to menu button) only when scrolled */}
             {scrolled && (
