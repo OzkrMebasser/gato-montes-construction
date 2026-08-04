@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: 'Nosotros | Gato Montes Construction',
   description: 'Con más de 20 años de experiencia, Gato Montes Construction es su socio de confianza en Wickenburg, Arizona.',
   alternates: {
-    canonical: 'https://handymaninwickenburg.com/nosotros',
+    canonical: 'https://www.handymaninwickenburg.com/nosotros',
     languages: {
-      en: 'https://handymaninwickenburg.com/about',
-      es: 'https://handymaninwickenburg.com/nosotros',
+      en: 'https://www.handymaninwickenburg.com/about',
+      es: 'https://www.handymaninwickenburg.com/nosotros',
     },
   },
   openGraph: {

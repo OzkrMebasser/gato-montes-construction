@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: 'Nuestros Proyectos | Gato Montes Construction',
   description: 'Vea nuestros proyectos recientes de handyman y remodelación en Wickenburg, Congress y las comunidades cercanas de Arizona.',
   alternates: {
-    canonical: 'https://handymaninwickenburg.com/proyectos',
+    canonical: 'https://www.handymaninwickenburg.com/proyectos',
     languages: {
-      en: 'https://handymaninwickenburg.com/projects',
-      es: 'https://handymaninwickenburg.com/proyectos',
+      en: 'https://www.handymaninwickenburg.com/projects',
+      es: 'https://www.handymaninwickenburg.com/proyectos',
     },
   },
   openGraph: {

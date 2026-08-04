@@ -11,7 +11,7 @@ import './globals.css';
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://handymaninwickenburg.com'),
+  metadataBase: new URL('https://www.handymaninwickenburg.com'),
   title: 'Gato Montes Construction | Handyman in Wickenburg, AZ',
   description: 'Trusted handyman and construction services in Wickenburg, Arizona. Bathroom remodeling, flooring & tile, doors & windows, stucco & fence repair, drywall, and painting.',
   keywords: 'handyman, construction, contractor, Wickenburg, Arizona, bathroom remodeling, flooring, tile, drywall, painting, stucco, fence repair',

@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: 'Contact Us | Gato Montes Construction',
   description: 'Get a free quote for your handyman project. Call us or send a message — serving Wickenburg, Arizona and surrounding areas.',
   alternates: {
-    canonical: 'https://handymaninwickenburg.com/contact',
+    canonical: 'https://www.handymaninwickenburg.com/contact',
     languages: {
-      en: 'https://handymaninwickenburg.com/contact',
-      es: 'https://handymaninwickenburg.com/contacto',
+      en: 'https://www.handymaninwickenburg.com/contact',
+      es: 'https://www.handymaninwickenburg.com/contacto',
     },
   },
   openGraph: {

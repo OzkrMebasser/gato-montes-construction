@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: 'Handyman Services | Gato Montes Construction',
   description: 'Bathroom remodeling, flooring & tile, doors & windows, stucco & fence repair, drywall, and painting services in Wickenburg, Arizona.',
   alternates: {
-    canonical: 'https://handymaninwickenburg.com/services',
+    canonical: 'https://www.handymaninwickenburg.com/services',
     languages: {
-      en: 'https://handymaninwickenburg.com/services',
-      es: 'https://handymaninwickenburg.com/servicios',
+      en: 'https://www.handymaninwickenburg.com/services',
+      es: 'https://www.handymaninwickenburg.com/servicios',
     },
   },
   openGraph: {

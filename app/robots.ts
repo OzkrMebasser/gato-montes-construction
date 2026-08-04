@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://handymaninwickenburg.com/sitemap.xml',
+    sitemap: 'https://www.handymaninwickenburg.com/sitemap.xml',
   };
 }
