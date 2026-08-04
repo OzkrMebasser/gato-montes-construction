@@ -147,7 +147,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="text-[#D9A876] mt-1 w-3 h-3 flex-shrink-0" />
                 <a
-                  href="mailto:info@gatomontesconstruction.com"
+                  href="mailto:handymaninwickenburg@gmail.com"
                   className="text-white/60 hover:text-[#D9A876] transition-colors text-sm"
                 >
                   {t("footer.email")}
