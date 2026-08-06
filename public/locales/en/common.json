@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "blog": "Blog",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -206,8 +207,10 @@
       "phone": "Phone Number",
       "service": "Service of Interest",
       "message": "Tell us about your project",
+      "messagePlaceholder": "Describe your project, repair, or renovation...",
       "submit": "Send Message",
       "success": "Thank you! We'll be in touch soon.",
+      "weWillGetBack": "We will get back to you within 24 hours.",
       "selectPlaceholder": "Select a service",
       "other": "Other",
       "week": "Mon - Fri: 8:00 AM - 5:00 PM",
@@ -221,5 +224,83 @@
       "address": "Address",
       "hours": "Business Hours"
     }
+  },
+ "blog": {
+    "subtitle": "Home Improvement Tips",
+    "title": "From Our Blog",
+    "minRead": "min read",
+    "readMore": "Read more",
+    "empty": "No articles yet. Check back soon!",
+    "backToBlog": "Back to Blog",
+    "by": "By",
+    "inThisArticle": "In This Article",
+    "ctaTitle": "Need Help With This?",
+    "ctaDescription": "Our team is ready to bring the same quality craftsmanship to your home.",
+    "ctaButton": "Get a Free Estimate",
+    "posts": {
+      "hire-professional-handyman": {
+        "slug": "why-hire-professional-handyman-arizona",
+        "title": "Why Hiring a Professional Handyman in Wickenburg Saves You Time, Money, and Stress",
+        "excerpt": "DIY repairs often take longer, cost more, and don't always deliver lasting results. See why homeowners across Wickenburg and the surrounding area trust a professional instead.",
+        "category": "Handyman Services",
+        "content": [
+          { "type": "paragraph", "text": "Owning a home comes with an endless list of repairs and improvements. While some projects may seem simple enough to tackle yourself, many homeowners quickly discover that DIY repairs often take longer, cost more, and don't always deliver lasting results." },
+          { "type": "quote", "text": "We help Wickenburg homeowners complete repairs and remodeling projects efficiently, safely, and professionally." },
+          { "type": "heading", "text": "Save Valuable Time" },
+          { "type": "paragraph", "text": "Instead of spending your weekends watching tutorials and making multiple trips to the hardware store, let an experienced handyman handle the job. We arrive with the right tools, materials, and expertise to complete projects quickly." },
+          { "type": "heading", "text": "Avoid Costly Mistakes" },
+          { "type": "paragraph", "text": "Incorrect installations or poor repairs can lead to bigger problems down the road. Whether it's drywall repairs, stucco restoration, tile installation, or painting, quality workmanship protects your investment." },
+          { "type": "heading", "text": "Improve Your Home's Value" },
+          { "type": "paragraph", "text": "Small improvements can make a big difference. Updated bathrooms, fresh paint, repaired stucco, and properly maintained interiors help increase curb appeal and property value." },
+          { "type": "heading", "text": "Services We Offer" },
+          { "type": "list", "items": ["Bathroom Remodeling", "Kitchen Repairs", "Drywall Installation & Repair", "Stucco Repair", "Interior & Exterior Painting", "Flooring Installation", "General Home Repairs"] },
+          { "type": "heading", "text": "Contact Gato Montes Construction" },
+          { "type": "paragraph", "text": "Whether you need a quick repair or a complete remodeling project, our experienced team is ready to help. Contact Gato Montes Construction today for reliable handyman services throughout Wickenburg and the surrounding area." }
+        ]
+      },
+      "top-10-home-repairs": {
+        "slug": "top-10-home-repairs-leave-to-handyman",
+        "title": "Top 10 Home Repairs You Should Leave to a Trusted Wickenburg Handyman",
+        "excerpt": "Many home repairs appear simple but can quickly become expensive if not completed correctly. Here are the top 10 we recommend leaving to professionals.",
+        "category": "Home Tips",
+        "content": [
+          { "type": "paragraph", "text": "Many home repairs appear simple but can quickly become expensive if not completed correctly. Hiring an experienced handyman ensures the job is done right the first time." },
+          { "type": "keyList", "items": [
+            { "label": "Drywall Repair", "description": "Cracks, holes, and water damage require proper patching and finishing." },
+            { "label": "Stucco Repairs", "description": "Wickenburg's intense heat can cause stucco to crack over time. Professional repairs prevent moisture damage." },
+            { "label": "Bathroom Remodeling", "description": "Installing new fixtures, tile, and vanities requires precision and experience." },
+            { "label": "Tile Installation", "description": "Proper layout and leveling create beautiful, long-lasting floors and walls." },
+            { "label": "Interior Painting", "description": "Professional preparation produces smoother finishes and longer-lasting results." },
+            { "label": "Exterior Painting", "description": "Wickenburg's sun demands high-quality materials and proper application techniques." },
+            { "label": "Door Installation", "description": "Poorly installed doors affect security and energy efficiency." },
+            { "label": "Baseboards and Trim", "description": "Professional finishing adds value and gives every room a polished appearance." },
+            { "label": "Fence Repairs", "description": "Damaged fencing can reduce privacy and curb appeal." },
+            { "label": "General Home Maintenance", "description": "Regular maintenance helps homeowners avoid larger repair costs later." }
+          ]},
+          { "type": "heading", "text": "Trust Gato Montes Construction" },
+          { "type": "paragraph", "text": "No matter the size of your project, Gato Montes Construction delivers dependable handyman services with quality craftsmanship and honest pricing." }
+        ]
+      },
+      "small-repairs-full-remodels": {
+        "slug": "small-repairs-to-full-remodels",
+        "title": "From Small Repairs to Full Remodels: How a Reliable Handyman Can Transform Your Home",
+        "excerpt": "Instead of hiring multiple contractors, work with one experienced team that can handle a wide variety of home improvement services.",
+        "category": "Remodeling",
+        "content": [
+          { "type": "paragraph", "text": "Every home eventually needs repairs. Whether it's fixing damaged drywall, replacing flooring, repairing stucco, or remodeling an outdated bathroom, choosing the right handyman makes all the difference." },
+          { "type": "paragraph", "text": "At Gato Montes Construction, we proudly help Wickenburg homeowners maintain and improve their properties." },
+          { "type": "heading", "text": "One Company for Every Project" },
+          { "type": "paragraph", "text": "Instead of hiring multiple contractors, work with one experienced team that can handle a wide variety of home improvement services. We specialize in:" },
+          { "type": "list", "items": ["Bathroom Remodeling", "Drywall Repair", "Stucco Repair", "Interior & Exterior Painting", "Flooring Installation", "Tile Work", "Home Maintenance", "General Repairs"] },
+          { "type": "heading", "text": "Quality That Lasts" },
+          { "type": "quote", "text": "Our goal isn't simply to complete a repair—we focus on delivering craftsmanship that stands the test of time." },
+          { "type": "heading", "text": "Honest Service" },
+          { "type": "paragraph", "text": "We believe in clear communication, fair pricing, and dependable service from start to finish. Customer satisfaction is our highest priority." },
+          { "type": "heading", "text": "Ready to Improve Your Home?" },
+          { "type": "paragraph", "text": "Whether you need a small repair or a complete renovation, Gato Montes Construction is here to help. Contact us today for a free estimate and discover why homeowners across Wickenburg and the surrounding area trust us for reliable handyman, remodeling, and home repair services." }
+        ]
+      }
+    }
   }
+
 }

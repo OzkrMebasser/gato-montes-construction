@@ -3,6 +3,7 @@
     "home": "Inicio",
     "about": "Nosotros",
     "services": "Servicios",
+    "blog": "Blog",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
@@ -157,7 +158,7 @@
     "title": "¿Necesitas un Handyman de Confianza?",
     "description": "Desde reparaciones y mantenimiento del hogar hasta remodelaciones de baños e instalación de pisos, estamos aquí para ayudarte.",
     "button": "Solicita un Presupuesto Gratis",
-     "callCTA": "¿Necesitas ayuda? ¡Llámanos!"
+    "callCTA": "¿Necesitas ayuda? ¡Llámanos!"
   },
   "footer": {
     "company": "Gato Montes Construction",
@@ -205,13 +206,15 @@
       "phone": "Número de Teléfono",
       "service": "Servicio de Interés",
       "message": "Cuéntenos sobre su proyecto",
+      "messagePlaceholder": "Describe tu proyecto, reparación o remodelación...",
       "submit": "Enviar Mensaje",
       "selectPlaceholder": "Seleccione un servicio",
       "other": "Otro",
       "success": "¡Gracias! Nos pondremos en contacto pronto.",
+      "weWillGetBack": "Nos pondremos en contacto contigo dentro de las próximas 24 horas.",
       "week": "Lun - Vie: 8:00 AM - 5:00 PM",
-      "sat" : "\nSáb: 8:00 AM - 12:00 PM",
-      "sun" : "\nDom: Cerrado"
+      "sat": "\nSáb: 8:00 AM - 12:00 PM",
+      "sun": "\nDom: Cerrado"
     },
     "info": {
       "title": "Póngase en Contacto",
@@ -219,6 +222,83 @@
       "email": "Correo",
       "address": "Dirección",
       "hours": "Horario de Atención"
+    }
+  },
+  "blog": {
+    "subtitle": "Consejos para el Hogar",
+    "title": "Desde Nuestro Blog",
+    "minRead": "min de lectura",
+    "readMore": "Leer más",
+    "empty": "Aún no hay artículos. ¡Vuelve pronto!",
+    "backToBlog": "Volver al Blog",
+    "by": "Por",
+    "inThisArticle": "En Este Artículo",
+    "ctaTitle": "¿Necesitas Ayuda con Esto?",
+    "ctaDescription": "Nuestro equipo está listo para llevar la misma calidad de trabajo a tu casa.",
+    "ctaButton": "Solicita una Cotización Gratis",
+    "posts": {
+      "hire-professional-handyman": {
+        "slug": "por-que-contratar-manitas-profesional-arizona",
+        "title": "Por Qué Contratar a un Handyman Profesional en Wickenburg Te Ahorra Tiempo, Dinero y Estrés",
+        "excerpt": "Las reparaciones por tu cuenta suelen tardar más, costar más y no siempre duran. Descubre por qué los dueños de casa en Wickenburg y sus alrededores prefieren a un profesional.",
+        "category": "Servicios de Handyman",
+        "content": [
+          { "type": "paragraph", "text": "Tener una casa viene con una lista interminable de reparaciones y mejoras. Aunque algunos proyectos parezcan sencillos de hacer tú mismo, muchos dueños de casa descubren que las reparaciones por su cuenta suelen tardar más, costar más y no siempre dan resultados duraderos." },
+          { "type": "quote", "text": "Ayudamos a los dueños de casa en Wickenburg y sus alrededores a completar reparaciones y proyectos de remodelación de forma eficiente, segura y profesional." },
+          { "type": "heading", "text": "Ahorra Tiempo Valioso" },
+          { "type": "paragraph", "text": "En lugar de pasar tus fines de semana viendo tutoriales y haciendo múltiples viajes a la ferretería, deja que un handyman experimentado se encargue del trabajo. Llegamos con las herramientas, materiales y experiencia correctos para completar los proyectos rápidamente." },
+          { "type": "heading", "text": "Evita Errores Costosos" },
+          { "type": "paragraph", "text": "Las instalaciones incorrectas o reparaciones deficientes pueden generar problemas más grandes a futuro. Ya sea reparación de tablaroca, restauración de estuco, instalación de azulejo o pintura, un trabajo de calidad protege tu inversión." },
+          { "type": "heading", "text": "Mejora el Valor de tu Casa" },
+          { "type": "paragraph", "text": "Las pequeñas mejoras pueden hacer una gran diferencia. Baños actualizados, pintura fresca, estuco reparado y interiores bien mantenidos ayudan a aumentar el atractivo y el valor de la propiedad." },
+          { "type": "heading", "text": "Servicios que Ofrecemos" },
+          { "type": "list", "items": ["Remodelación de Baños", "Reparaciones de Cocina", "Instalación y Reparación de Tablaroca", "Reparación de Estuco", "Pintura Interior y Exterior", "Instalación de Pisos", "Reparaciones Generales del Hogar"] },
+          { "type": "heading", "text": "Contacta a Gato Montes Construction" },
+          { "type": "paragraph", "text": "Ya sea que necesites una reparación rápida o un proyecto de remodelación completo, nuestro equipo experimentado está listo para ayudarte. Contacta a Gato Montes Construction hoy mismo para servicios de handyman confiables en Wickenburg y sus alrededores." }
+        ]
+      },
+      "top-10-home-repairs": {
+        "slug": "10-reparaciones-que-debes-dejar-a-un-manitas",
+        "title": "Las 10 Reparaciones del Hogar Que Debes Dejar en Manos de un Handyman de Confianza",
+        "excerpt": "Muchas reparaciones parecen sencillas, pero pueden salir caras si no se hacen bien. Aquí las 10 que recomendamos dejar en manos de profesionales.",
+        "category": "Consejos del Hogar",
+        "content": [
+          { "type": "paragraph", "text": "Muchas reparaciones del hogar parecen sencillas, pero pueden salir caras si no se hacen correctamente. Contratar a un handyman experimentado asegura que el trabajo quede bien desde la primera vez." },
+          { "type": "keyList", "items": [
+            { "label": "Reparación de Tablaroca", "description": "Grietas, agujeros y daños por agua requieren un parchado y acabado adecuados." },
+            { "label": "Reparación de Estuco", "description": "El intenso calor de Wickenburg puede agrietar el estuco con el tiempo. Una reparación profesional previene daños por humedad." },
+            { "label": "Remodelación de Baños", "description": "Instalar nuevos accesorios, azulejo y muebles requiere precisión y experiencia." },
+            { "label": "Instalación de Azulejo", "description": "Un trazo y nivelación adecuados crean pisos y paredes hermosos y duraderos." },
+            { "label": "Pintura Interior", "description": "Una preparación profesional produce acabados más lisos y duraderos." },
+            { "label": "Pintura Exterior", "description": "El sol de Wickenburg exige materiales de alta calidad y técnicas de aplicación adecuadas." },
+            { "label": "Instalación de Puertas", "description": "Puertas mal instaladas afectan la seguridad y la eficiencia energética." },
+            { "label": "Zoclos y Molduras", "description": "Un acabado profesional agrega valor y da una apariencia pulida a cada habitación." },
+            { "label": "Reparación de Cercas", "description": "Una cerca dañada puede reducir la privacidad y el atractivo de tu casa." },
+            { "label": "Mantenimiento General del Hogar", "description": "El mantenimiento regular ayuda a evitar reparaciones más grandes y costosas después." }
+          ]},
+          { "type": "heading", "text": "Confía en Gato Montes Construction" },
+          { "type": "paragraph", "text": "Sin importar el tamaño de tu proyecto, Gato Montes Construction ofrece servicios de handyman confiables, con mano de obra de calidad y precios honestos." }
+        ]
+      },
+      "small-repairs-full-remodels": {
+        "slug": "de-reparaciones-pequenas-a-remodelaciones-completas",
+        "title": "De Reparaciones Pequeñas a Remodelaciones Completas: Cómo un Handyman Confiable Puede Transformar tu Casa",
+        "excerpt": "En lugar de contratar a varios contratistas, trabaja con un solo equipo experimentado que puede encargarse de una amplia variedad de mejoras para tu hogar.",
+        "category": "Remodelación",
+        "content": [
+          { "type": "paragraph", "text": "Toda casa eventualmente necesita reparaciones. Ya sea arreglar tablaroca dañada, cambiar el piso, reparar estuco o remodelar un baño anticuado, elegir al handyman correcto marca toda la diferencia." },
+          { "type": "paragraph", "text": "En Gato Montes Construction, nos enorgullece ayudar a los dueños de casa en Wickenburg y sus alrededores a mantener y mejorar sus propiedades." },
+          { "type": "heading", "text": "Una Sola Empresa para Cada Proyecto" },
+          { "type": "paragraph", "text": "En lugar de contratar a varios contratistas, trabaja con un solo equipo experimentado que puede encargarse de una amplia variedad de servicios de mejoras para el hogar. Nos especializamos en:" },
+          { "type": "list", "items": ["Remodelación de Baños", "Reparación de Tablaroca", "Reparación de Estuco", "Pintura Interior y Exterior", "Instalación de Pisos", "Trabajo de Azulejo", "Mantenimiento del Hogar", "Reparaciones Generales"] },
+          { "type": "heading", "text": "Calidad que Perdura" },
+          { "type": "quote", "text": "Nuestro objetivo no es solo completar una reparación: nos enfocamos en ofrecer un trabajo que resista el paso del tiempo." },
+          { "type": "heading", "text": "Servicio Honesto" },
+          { "type": "paragraph", "text": "Creemos en la comunicación clara, precios justos y un servicio confiable de principio a fin. La satisfacción del cliente es nuestra prioridad número uno." },
+          { "type": "heading", "text": "¿Listo para Mejorar tu Casa?" },
+          { "type": "paragraph", "text": "Ya sea que necesites una reparación pequeña o una renovación completa, Gato Montes Construction está aquí para ayudarte. Contáctanos hoy para una cotización gratis y descubre por qué los dueños de casa en Wickenburg y sus alrededores confían en nosotros para servicios de handyman, remodelación y reparación del hogar." }
+        ]
+      }
     }
   }
 }

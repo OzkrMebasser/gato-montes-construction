@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useTranslation, useChangeLanguage } from "@/lib/i18n/client";
+import { useTranslation } from "@/lib/i18n/client";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
   { key: "home", href: { en: "/", es: "/inicio" } },
   { key: "about", href: { en: "/about", es: "/nosotros" } },
   { key: "services", href: { en: "/services", es: "/servicios" } },
+  { key: "blog", href: { en: "/blog", es: "/blog-articulos" } },
   // { key: "projects", href: { en: "/projects", es: "/proyectos" } },
   { key: "contact", href: { en: "/contact", es: "/contacto" } },
 ];
@@ -21,9 +22,6 @@ const logoTextWhite =
   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783203088/nuevo-logo-gatomontes-blanco_azztad.png";
 const logoTextBrown =
   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783217903/nuevo-logo-gatomontes_qszinl.png";
-
-// const logo =
-//   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783181750/logo-nuevo-gato-montes_x2wcih.png";
 
 const logo =
   "https://res.cloudinary.com/dmqqhcf49/image/upload/v1783641933/logo-nuevo-gato-montes_txw8bu.png";
@@ -37,7 +35,6 @@ export function Header() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const pathname = usePathname();
   const { t, i18n } = useTranslation();
-  const changeLanguage = useChangeLanguage();
   const currentLang = (i18n.language || "en").split("-")[0] as "en" | "es";
 
   useEffect(() => {
@@ -58,8 +55,29 @@ export function Header() {
     setMobileOpen(false);
   }, [pathname]);
 
+  const getAlternatePath = (targetLang: "en" | "es"): string => {
+    // Coincidencia exacta con alguna ruta estática conocida (home, about, services, blog, contact)
+    const match = navLinks.find((link) => link.href[currentLang] === pathname);
+    if (match) return match.href[targetLang];
+
+    // Home tiene dos formas posibles ("/" y "/inicio")
+    if (pathname === "/" || pathname === "/inicio") {
+      return targetLang === "es" ? "/inicio" : "/";
+    }
+
+    // Artículo individual del blog: no sabemos el slug equivalente desde aquí,
+    // así que mandamos al listado del blog en el idioma destino
+    if (pathname.startsWith("/blog/") || pathname.startsWith("/blog-articulos/")) {
+      return targetLang === "es" ? "/blog-articulos" : "/blog";
+    }
+
+    // Fallback: home
+    return targetLang === "es" ? "/inicio" : "/";
+  };
+
   const toggleLang = () => {
-    changeLanguage(currentLang === "en" ? "es" : "en");
+    const targetLang = currentLang === "en" ? "es" : "en";
+    window.location.href = getAlternatePath(targetLang);
   };
 
   const isActive = (href: string) => {
@@ -235,8 +253,6 @@ export function Header() {
 
           {/* Right side actions */}
           <div className="flex items-center gap-4">
-           
-
             {/* Mobile-only language toggle — appears here (right, next to menu button) only when scrolled */}
             {scrolled && (
               <button
@@ -327,20 +343,6 @@ export function Header() {
                 height={70}
                 className=" w-auto"
               />
-              {/* <Image
-                  src={logoRound}
-                  alt="Gato Montes Construction"
-                  width={70}
-                  height={70}
-                  className="-ml-3 rounded-full h-[60px] w-[60px]"
-                />
-                <Image
-                  src={logoTextBrown}
-                  alt="Gato Montes Construction"
-                  width={200}
-                  height={70}
-                  className="-ml-3 transition-all duration-300 object-contain h-[70px] w-auto"
-                /> */}
             </Link>
           </div>
         </div>

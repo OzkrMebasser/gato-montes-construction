@@ -10,6 +10,7 @@ const footerLinks = [
   { key: "home", href: { en: "/", es: "/inicio" } },
   { key: "about", href: { en: "/about", es: "/nosotros" } },
   { key: "services", href: { en: "/services", es: "/servicios" } },
+  { key: "blog", href: { en: "/blog", es: "/blog-articulos" } },
   { key: "contact", href: { en: "/contact", es: "/contacto" } },
 ];
 

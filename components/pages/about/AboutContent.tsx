@@ -210,7 +210,7 @@ export function AboutContent({ lang }: { lang: "en" | "es" }) {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/8961401/pexels-photo-8961401.jpeg"
+                  src="https://res.cloudinary.com/dmqqhcf49/image/upload/v1785983496/oscar-salazar-gato-montes-construction-5_ylytxh.png"
                   alt="Construction team"
                   className="w-full h-full object-cover"
                 />

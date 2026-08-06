@@ -149,7 +149,7 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                     {t("contact.form.success")}
                   </h3>
                   <p className="text-green-600">
-                    We will get back to you within 24 hours.
+                   {t("contact.form.weWillGetBack")}
                   </p>
                 </div>
               ) : (
@@ -226,7 +226,7 @@ export function ContactContent({ lang }: { lang: "en" | "es" }) {
                       required
                       rows={5}
                       className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-[#A0522D] focus:ring-2 focus:ring-[#A0522D]/20 outline-none transition-all resize-none"
-                      placeholder="Tell us about your project..."
+                      placeholder={t("contact.form.messagePlaceholder")}
                     />
                   </div>
 
