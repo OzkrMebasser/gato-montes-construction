@@ -24,7 +24,7 @@
       "description": "Reparamos y actualizamos accesorios, azulejo, grifería y acabados de su baño con atención a los detalles.",
       "features": [
         "Actualización de tocador y accesorios",
-        "Reparación de regadera y tina",
+        "Reparación de regadera",
         "Reparación de azulejo y boquilla (grout)",
         "Reparación de grifería y accesorios",
         "Arreglos de iluminación y ventilación"
@@ -38,7 +38,7 @@
         "Reparación de azulejo y boquilla (grout)",
         "Reparación de parches en subpiso",
         "Instalación y reparación de zoclo",
-        "Retoques de boquilla y sellador"
+        "Retoques de boquilla"
       ]
     },
     "doorsWindows": {
@@ -48,8 +48,8 @@
         "Instalación y reparación de puertas",
         "Instalación y reparación de ventanas",
         "Herrajes y chapas",
-        "Impermeabilización",
-        "Reparación de marcos y molduras"
+        "Reparación de marcos y molduras",
+        "Y mucho más"
       ]
     },
     "stuccoFences": {
@@ -58,9 +58,8 @@
       "features": [
         "Reparación de estuco",
         "Reparación de cercos",
-        "Reparación e instalación de portones",
         "Reparación de grietas y parches",
-        "Impermeabilización"
+        "Y mucho más"
       ]
     },
     "drywall": {
@@ -81,7 +80,7 @@
         "Pintura interior",
         "Pintura exterior",
         "Retoques y ajuste de color",
-        "Tinte para cercos y decks",
+        "Pintura para cercos",
         "Preparación y reparación de superficies"
       ]
     }

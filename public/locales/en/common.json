@@ -16,15 +16,15 @@
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Home repairs, maintenance, and quality updates.",
+    "subtitle": "Quality home repairs, maintenance, and improvements.",
     "cta": "View All Services",
     "more": "Learn more",
     "bathroomRemodeling": {
       "title": "Bathroom Updates & Repairs",
-      "description": "We repair and update fixtures, tile, faucets, and finishes in your bathroom with careful attention to detail.",
+      "description": "We repair and update your bathroom's fixtures, tile, faucets, and finishes with attention to detail.",
       "features": [
-        "Vanity & fixture upgrades",
-        "Shower & tub repair",
+        "Vanity & fixture updates",
+        "Shower repair",
         "Tile & grout repair",
         "Faucet & fixture repair",
         "Lighting & ventilation fixes"
@@ -32,35 +32,34 @@
     },
     "flooringTile": {
       "title": "Flooring & Tile Repair",
-      "description": "Repair and upkeep of flooring, tile work, and general flooring fixes.",
+      "description": "Repair and maintenance of flooring, tile work, and general flooring fixes.",
       "features": [
         "Flooring repair",
-        "Tile repair & regrouting",
+        "Tile & grout repair",
         "Subfloor patch repair",
-        "Baseboard trim installation & repair",
-        "Grout & caulk touch-ups"
+        "Baseboard installation & repair",
+        "Grout touch-ups"
       ]
     },
     "doorsWindows": {
       "title": "Doors & Windows",
-      "description": "Door and window installation, adjustments, and repairs to improve the safety and look of your property.",
+      "description": "Door and window installation, adjustments, and repairs to improve the safety and appearance of your property.",
       "features": [
         "Door installation & repair",
         "Window installation & repair",
-        "Hardware & lock fixtures",
-        "Weatherproofing",
-        "Frame & trim repair"
+        "Hardware & locks",
+        "Frame & trim repair",
+        "And much more"
       ]
     },
     "stuccoFences": {
       "title": "Stucco & Fences",
-      "description": "Stucco and fence repair and upkeep to keep your property protected and looking good year-round.",
+      "description": "Stucco and fence repair and maintenance to keep your property protected and looking great year-round.",
       "features": [
         "Stucco repair",
         "Fence repair",
-        "Gate repair & installation",
         "Crack & patch repair",
-        "Weatherproofing"
+        "And much more"
       ]
     },
     "drywall": {
@@ -68,7 +67,7 @@
       "description": "Drywall installation and repair, wall patching, and textured finishes.",
       "features": [
         "Drywall patch repair",
-        "Patch & crack repair",
+        "Crack & patch repair",
         "Texture matching",
         "Water damage repair",
         "Ceiling patch repair"
@@ -80,8 +79,8 @@
       "features": [
         "Interior painting",
         "Exterior painting",
-        "Touch-up & color matching",
-        "Fence & deck staining",
+        "Touch-ups & color matching",
+        "Fence painting",
         "Surface prep & repair"
       ]
     }
